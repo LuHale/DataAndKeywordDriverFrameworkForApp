@@ -1,0 +1,1657 @@
+2019-04-13 17:17:26 AppRankAndSearchApp.py[line:23] INFO ----------进入APP主页
+2019-04-13 17:17:26 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-13 17:17:37 AppRankAndSearchApp.py[line:69] INFO 执行步骤“启动APP”成功
+2019-04-13 17:17:38 AppRankAndSearchApp.py[line:79] INFO 用例“进入APP主页”执行成功
+2019-04-13 17:17:38 AppRankAndSearchApp.py[line:23] INFO ----------登录
+2019-04-13 17:17:38 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-13 17:17:46 AppRankAndSearchApp.py[line:69] INFO 执行步骤“点击个人中心”成功
+2019-04-13 17:17:47 AppRankAndSearchApp.py[line:69] INFO 执行步骤“点击点击登录按钮”成功
+2019-04-13 17:25:31 AppRankAndSearchApp.py[line:23] INFO ----------进入APP主页
+2019-04-13 17:25:31 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-13 17:25:42 AppRankAndSearchApp.py[line:103] ERROR 驱动框架主程序发生异常
+异常信息：Traceback (most recent call last):
+  File "C:\Python\Python37\lib\site-packages\urllib3\connection.py", line 171, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "C:\Python\Python37\lib\site-packages\urllib3\util\connection.py", line 79, in create_connection
+    raise err
+  File "C:\Python\Python37\lib\site-packages\urllib3\util\connection.py", line 69, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "C:\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 354, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "C:\Python\Python37\lib\http\client.py", line 1229, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Python\Python37\lib\http\client.py", line 1275, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Python\Python37\lib\http\client.py", line 1224, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Python\Python37\lib\http\client.py", line 1016, in _send_output
+    self.send(msg)
+  File "C:\Python\Python37\lib\http\client.py", line 956, in send
+    self.connect()
+  File "C:\Python\Python37\lib\site-packages\urllib3\connection.py", line 196, in connect
+    conn = self._new_conn()
+  File "C:\Python\Python37\lib\site-packages\urllib3\connection.py", line 180, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x0000013FACE57160>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ProgramSourceCode\DataAndKeywordDrivenFrameworkForApp\TestScripts\AppRankAndSearchApp.py", line 66, in appRankAndSearchApp
+    eval(step)
+  File "<string>", line 1, in <module>
+  File "D:\ProgramSourceCode\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 14, in open_app
+    raise e
+  File "D:\ProgramSourceCode\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 12, in open_app
+    driver=webdriver.Remote('http://localhost:4723/wd/hub',desired_caps)
+  File "C:\Python\Python37\lib\site-packages\appium\webdriver\webdriver.py", line 129, in __init__
+    proxy
+  File "C:\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "C:\Python\Python37\lib\site-packages\appium\webdriver\webdriver.py", line 204, in start_session
+    response = self.execute(RemoteCommand.NEW_SESSION, parameters)
+  File "C:\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "C:\Python\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "C:\Python\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 402, in _request
+    resp = http.request(method, url, body=body, headers=headers)
+  File "C:\Python\Python37\lib\site-packages\urllib3\request.py", line 72, in request
+    **urlopen_kw)
+  File "C:\Python\Python37\lib\site-packages\urllib3\request.py", line 150, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\Python\Python37\lib\site-packages\urllib3\poolmanager.py", line 322, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
+    **response_kw)
+  File "C:\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
+    **response_kw)
+  File "C:\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
+    **response_kw)
+  File "C:\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "C:\Python\Python37\lib\site-packages\urllib3\util\retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000013FACE57160>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ProgramSourceCode\DataAndKeywordDrivenFrameworkForApp\TestScripts\AppRankAndSearchApp.py", line 72, in appRankAndSearchApp
+    errPicPath = capture_screen()
+  File "D:\ProgramSourceCode\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 82, in capture_screen
+    raise e
+  File "D:\ProgramSourceCode\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 80, in capture_screen
+    driver.get_screenshot_as_file(picNameAndPath)
+AttributeError: 'str' object has no attribute 'get_screenshot_as_file'
+
+2019-04-13 17:26:05 AppRankAndSearchApp.py[line:23] INFO ----------进入APP主页
+2019-04-13 17:26:05 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-13 17:26:15 AppRankAndSearchApp.py[line:103] ERROR 驱动框架主程序发生异常
+异常信息：Traceback (most recent call last):
+  File "C:\Python\Python37\lib\site-packages\urllib3\connection.py", line 171, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "C:\Python\Python37\lib\site-packages\urllib3\util\connection.py", line 79, in create_connection
+    raise err
+  File "C:\Python\Python37\lib\site-packages\urllib3\util\connection.py", line 69, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "C:\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 354, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "C:\Python\Python37\lib\http\client.py", line 1229, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Python\Python37\lib\http\client.py", line 1275, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Python\Python37\lib\http\client.py", line 1224, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Python\Python37\lib\http\client.py", line 1016, in _send_output
+    self.send(msg)
+  File "C:\Python\Python37\lib\http\client.py", line 956, in send
+    self.connect()
+  File "C:\Python\Python37\lib\site-packages\urllib3\connection.py", line 196, in connect
+    conn = self._new_conn()
+  File "C:\Python\Python37\lib\site-packages\urllib3\connection.py", line 180, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x00000281EA723278>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ProgramSourceCode\DataAndKeywordDrivenFrameworkForApp\TestScripts\AppRankAndSearchApp.py", line 66, in appRankAndSearchApp
+    eval(step)
+  File "<string>", line 1, in <module>
+  File "D:\ProgramSourceCode\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 14, in open_app
+    raise e
+  File "D:\ProgramSourceCode\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 12, in open_app
+    driver=webdriver.Remote('http://localhost:4723/wd/hub',desired_caps)
+  File "C:\Python\Python37\lib\site-packages\appium\webdriver\webdriver.py", line 129, in __init__
+    proxy
+  File "C:\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "C:\Python\Python37\lib\site-packages\appium\webdriver\webdriver.py", line 204, in start_session
+    response = self.execute(RemoteCommand.NEW_SESSION, parameters)
+  File "C:\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "C:\Python\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "C:\Python\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 402, in _request
+    resp = http.request(method, url, body=body, headers=headers)
+  File "C:\Python\Python37\lib\site-packages\urllib3\request.py", line 72, in request
+    **urlopen_kw)
+  File "C:\Python\Python37\lib\site-packages\urllib3\request.py", line 150, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\Python\Python37\lib\site-packages\urllib3\poolmanager.py", line 322, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
+    **response_kw)
+  File "C:\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
+    **response_kw)
+  File "C:\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
+    **response_kw)
+  File "C:\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "C:\Python\Python37\lib\site-packages\urllib3\util\retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000281EA723278>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ProgramSourceCode\DataAndKeywordDrivenFrameworkForApp\TestScripts\AppRankAndSearchApp.py", line 72, in appRankAndSearchApp
+    errPicPath = capture_screen()
+  File "D:\ProgramSourceCode\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 82, in capture_screen
+    raise e
+  File "D:\ProgramSourceCode\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 80, in capture_screen
+    driver.get_screenshot_as_file(picNameAndPath)
+AttributeError: 'str' object has no attribute 'get_screenshot_as_file'
+
+2019-04-13 17:27:04 AppRankAndSearchApp.py[line:23] INFO ----------进入APP主页
+2019-04-13 17:27:04 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-13 17:27:24 AppRankAndSearchApp.py[line:103] ERROR 驱动框架主程序发生异常
+异常信息：Traceback (most recent call last):
+  File "D:\ProgramSourceCode\DataAndKeywordDrivenFrameworkForApp\TestScripts\WriteResult.py", line 22, in writeResult
+    excelObj.writeCellCurrentTime(sheet,rowNo=rowNo,colsNo=colsDict[colNo][0],style=colorDict[testResult.lower()])
+  File "D:\ProgramSourceCode\DataAndKeywordDrivenFrameworkForApp\Util\ParseExcel.py", line 233, in writeCellCurrentTime
+    raise e
+  File "D:\ProgramSourceCode\DataAndKeywordDrivenFrameworkForApp\Util\ParseExcel.py", line 231, in writeCellCurrentTime
+    self.workbook.save(self.excelFile)
+  File "C:\Python\Python37\lib\site-packages\openpyxl\workbook\workbook.py", line 396, in save
+    save_workbook(self, filename)
+  File "C:\Python\Python37\lib\site-packages\openpyxl\writer\excel.py", line 292, in save_workbook
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "C:\Python\Python37\lib\zipfile.py", line 1182, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'D:\\ProgramSourceCode\\DataAndKeywordDrivenFrameworkForApp\\TestData\\邢帅教育.xlsx'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ProgramSourceCode\DataAndKeywordDrivenFrameworkForApp\TestScripts\AppRankAndSearchApp.py", line 68, in appRankAndSearchApp
+    writeResult(excelObj, stepSheet, "Pass", j, "caseStep")
+  File "D:\ProgramSourceCode\DataAndKeywordDrivenFrameworkForApp\TestScripts\WriteResult.py", line 35, in writeResult
+    print("写入excel出错\n错误信息:%s："%(traceback.format_exc().decode("utf-8")))
+AttributeError: 'str' object has no attribute 'decode'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ProgramSourceCode\DataAndKeywordDrivenFrameworkForApp\TestScripts\WriteResult.py", line 22, in writeResult
+    excelObj.writeCellCurrentTime(sheet,rowNo=rowNo,colsNo=colsDict[colNo][0],style=colorDict[testResult.lower()])
+  File "D:\ProgramSourceCode\DataAndKeywordDrivenFrameworkForApp\Util\ParseExcel.py", line 233, in writeCellCurrentTime
+    raise e
+  File "D:\ProgramSourceCode\DataAndKeywordDrivenFrameworkForApp\Util\ParseExcel.py", line 231, in writeCellCurrentTime
+    self.workbook.save(self.excelFile)
+  File "C:\Python\Python37\lib\site-packages\openpyxl\workbook\workbook.py", line 396, in save
+    save_workbook(self, filename)
+  File "C:\Python\Python37\lib\site-packages\openpyxl\writer\excel.py", line 292, in save_workbook
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "C:\Python\Python37\lib\zipfile.py", line 1182, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'D:\\ProgramSourceCode\\DataAndKeywordDrivenFrameworkForApp\\TestData\\邢帅教育.xlsx'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ProgramSourceCode\DataAndKeywordDrivenFrameworkForApp\TestScripts\AppRankAndSearchApp.py", line 74, in appRankAndSearchApp
+    writeResult(excelObj, stepSheet, "Faild", j, "caseStep", errMsg = errMsg, errPicPath = errPicPath)
+  File "D:\ProgramSourceCode\DataAndKeywordDrivenFrameworkForApp\TestScripts\WriteResult.py", line 35, in writeResult
+    print("写入excel出错\n错误信息:%s："%(traceback.format_exc().decode("utf-8")))
+AttributeError: 'str' object has no attribute 'decode'
+
+2019-04-13 17:28:39 AppRankAndSearchApp.py[line:23] INFO ----------进入APP主页
+2019-04-13 17:28:39 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-13 17:28:48 AppRankAndSearchApp.py[line:69] INFO 执行步骤“启动APP”成功
+2019-04-13 17:28:48 AppRankAndSearchApp.py[line:79] INFO 用例“进入APP主页”执行成功
+2019-04-13 17:28:48 AppRankAndSearchApp.py[line:23] INFO ----------登录
+2019-04-13 17:28:48 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-13 17:28:57 AppRankAndSearchApp.py[line:69] INFO 执行步骤“点击个人中心”成功
+2019-04-13 17:28:58 AppRankAndSearchApp.py[line:69] INFO 执行步骤“点击点击登录按钮”成功
+2019-04-13 17:29:04 AppRankAndSearchApp.py[line:69] INFO 执行步骤“输入用户名”成功
+2019-04-13 17:29:21 AppRankAndSearchApp.py[line:69] INFO 执行步骤“输入密码”成功
+2019-04-13 17:29:25 AppRankAndSearchApp.py[line:69] INFO 执行步骤“点击登录”成功
+2019-04-13 17:29:28 AppRankAndSearchApp.py[line:69] INFO 执行步骤“等待”成功
+2019-04-13 17:29:30 AppRankAndSearchApp.py[line:75] ERROR 执行步骤“断言是否登录成功”失败
+异常信息：Traceback (most recent call last):
+  File "D:\ProgramSourceCode\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 58, in assert_string_in_pagesource
+    assert assertString in driver.page_source,"%s not found in page source!" %assertString
+AssertionError: fosterwu not found in page source!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ProgramSourceCode\DataAndKeywordDrivenFrameworkForApp\TestScripts\AppRankAndSearchApp.py", line 66, in appRankAndSearchApp
+    eval(step)
+  File "<string>", line 1, in <module>
+  File "D:\ProgramSourceCode\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 60, in assert_string_in_pagesource
+    raise AssertionError(e)
+AssertionError: fosterwu not found in page source!
+
+2019-04-13 17:29:30 AppRankAndSearchApp.py[line:82] INFO 用例“登录”执行失败
+2019-04-13 17:29:30 AppRankAndSearchApp.py[line:23] INFO ----------搜索
+2019-04-13 17:29:30 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-13 17:29:49 AppRankAndSearchApp.py[line:69] INFO 执行步骤“回到首页”成功
+2019-04-13 17:29:52 AppRankAndSearchApp.py[line:69] INFO 执行步骤“等待3秒”成功
+2019-04-13 17:29:52 AppRankAndSearchApp.py[line:69] INFO 执行步骤“点击搜索框”成功
+2019-04-13 17:29:55 AppRankAndSearchApp.py[line:69] INFO 执行步骤“等待2秒”成功
+2019-04-13 17:30:00 AppRankAndSearchApp.py[line:69] INFO 执行步骤“输入搜索关键字”成功
+2019-04-13 17:30:04 AppRankAndSearchApp.py[line:69] INFO 执行步骤“等待”成功
+2019-04-13 17:30:05 AppRankAndSearchApp.py[line:69] INFO 执行步骤“选择一个搜索结果选项”成功
+2019-04-13 17:30:05 AppRankAndSearchApp.py[line:103] ERROR 驱动框架主程序发生异常
+异常信息：Traceback (most recent call last):
+  File "D:\ProgramSourceCode\DataAndKeywordDrivenFrameworkForApp\TestScripts\AppRankAndSearchApp.py", line 62, in appRankAndSearchApp
+    step = keyWord + "()"
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+
+2019-04-13 17:34:21 AppRankAndSearchApp.py[line:23] INFO ----------进入APP主页
+2019-04-13 17:34:21 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-13 17:34:37 AppRankAndSearchApp.py[line:69] INFO 执行步骤“启动APP”成功
+2019-04-13 17:34:37 AppRankAndSearchApp.py[line:79] INFO 用例“进入APP主页”执行成功
+2019-04-13 17:34:37 AppRankAndSearchApp.py[line:23] INFO ----------登录
+2019-04-13 17:34:37 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-13 17:35:09 AppRankAndSearchApp.py[line:75] ERROR 执行步骤“点击个人中心”失败
+异常信息：Traceback (most recent call last):
+  File "D:\ProgramSourceCode\DataAndKeywordDrivenFrameworkForApp\TestScripts\AppRankAndSearchApp.py", line 66, in appRankAndSearchApp
+    eval(step)
+  File "<string>", line 1, in <module>
+  File "D:\ProgramSourceCode\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 53, in click
+    raise e
+  File "D:\ProgramSourceCode\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 51, in click
+    getElement(driver, locationType, locatorExpression).click()
+  File "D:\ProgramSourceCode\DataAndKeywordDrivenFrameworkForApp\Util\ObjectMap.py", line 11, in getElement
+    raise e
+  File "D:\ProgramSourceCode\DataAndKeywordDrivenFrameworkForApp\Util\ObjectMap.py", line 8, in getElement
+    lambda x: x.find_element(by=locationType, value = locatorExpression))
+  File "C:\Python\Python37\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+2019-04-13 17:35:39 AppRankAndSearchApp.py[line:103] ERROR 驱动框架主程序发生异常
+异常信息：Traceback (most recent call last):
+  File "C:\Python\Python37\lib\site-packages\urllib3\connection.py", line 171, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "C:\Python\Python37\lib\site-packages\urllib3\util\connection.py", line 79, in create_connection
+    raise err
+  File "C:\Python\Python37\lib\site-packages\urllib3\util\connection.py", line 69, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "C:\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 354, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "C:\Python\Python37\lib\http\client.py", line 1229, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Python\Python37\lib\http\client.py", line 1275, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Python\Python37\lib\http\client.py", line 1224, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Python\Python37\lib\http\client.py", line 1016, in _send_output
+    self.send(msg)
+  File "C:\Python\Python37\lib\http\client.py", line 956, in send
+    self.connect()
+  File "C:\Python\Python37\lib\site-packages\urllib3\connection.py", line 196, in connect
+    conn = self._new_conn()
+  File "C:\Python\Python37\lib\site-packages\urllib3\connection.py", line 180, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000001C5DEBF5A58>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ProgramSourceCode\DataAndKeywordDrivenFrameworkForApp\TestScripts\AppRankAndSearchApp.py", line 66, in appRankAndSearchApp
+    eval(step)
+  File "<string>", line 1, in <module>
+  File "D:\ProgramSourceCode\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 53, in click
+    raise e
+  File "D:\ProgramSourceCode\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 51, in click
+    getElement(driver, locationType, locatorExpression).click()
+  File "D:\ProgramSourceCode\DataAndKeywordDrivenFrameworkForApp\Util\ObjectMap.py", line 11, in getElement
+    raise e
+  File "D:\ProgramSourceCode\DataAndKeywordDrivenFrameworkForApp\Util\ObjectMap.py", line 8, in getElement
+    lambda x: x.find_element(by=locationType, value = locatorExpression))
+  File "C:\Python\Python37\lib\site-packages\selenium\webdriver\support\wait.py", line 71, in until
+    value = method(self._driver)
+  File "D:\ProgramSourceCode\DataAndKeywordDrivenFrameworkForApp\Util\ObjectMap.py", line 8, in <lambda>
+    lambda x: x.find_element(by=locationType, value = locatorExpression))
+  File "C:\Python\Python37\lib\site-packages\appium\webdriver\webdriver.py", line 258, in find_element
+    'value': value})['value']
+  File "C:\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "C:\Python\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "C:\Python\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 402, in _request
+    resp = http.request(method, url, body=body, headers=headers)
+  File "C:\Python\Python37\lib\site-packages\urllib3\request.py", line 72, in request
+    **urlopen_kw)
+  File "C:\Python\Python37\lib\site-packages\urllib3\request.py", line 150, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\Python\Python37\lib\site-packages\urllib3\poolmanager.py", line 322, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
+    **response_kw)
+  File "C:\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
+    **response_kw)
+  File "C:\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
+    **response_kw)
+  File "C:\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "C:\Python\Python37\lib\site-packages\urllib3\util\retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=4723): Max retries exceeded with url: /wd/hub/session/d7542364-b636-4879-9463-57709a123c4d/element (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C5DEBF5A58>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python\Python37\lib\site-packages\urllib3\connection.py", line 171, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "C:\Python\Python37\lib\site-packages\urllib3\util\connection.py", line 79, in create_connection
+    raise err
+  File "C:\Python\Python37\lib\site-packages\urllib3\util\connection.py", line 69, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "C:\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 354, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "C:\Python\Python37\lib\http\client.py", line 1229, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Python\Python37\lib\http\client.py", line 1275, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Python\Python37\lib\http\client.py", line 1224, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Python\Python37\lib\http\client.py", line 1016, in _send_output
+    self.send(msg)
+  File "C:\Python\Python37\lib\http\client.py", line 956, in send
+    self.connect()
+  File "C:\Python\Python37\lib\site-packages\urllib3\connection.py", line 196, in connect
+    conn = self._new_conn()
+  File "C:\Python\Python37\lib\site-packages\urllib3\connection.py", line 180, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000001C5DEBF5AC8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ProgramSourceCode\DataAndKeywordDrivenFrameworkForApp\TestScripts\AppRankAndSearchApp.py", line 72, in appRankAndSearchApp
+    errPicPath = capture_screen()
+  File "D:\ProgramSourceCode\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 83, in capture_screen
+    raise e
+  File "D:\ProgramSourceCode\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 81, in capture_screen
+    driver.get_screenshot_as_file(picNameAndPath)
+  File "C:\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1032, in get_screenshot_as_file
+    png = self.get_screenshot_as_png()
+  File "C:\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1064, in get_screenshot_as_png
+    return base64.b64decode(self.get_screenshot_as_base64().encode('ascii'))
+  File "C:\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1074, in get_screenshot_as_base64
+    return self.execute(Command.SCREENSHOT)['value']
+  File "C:\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "C:\Python\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "C:\Python\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 402, in _request
+    resp = http.request(method, url, body=body, headers=headers)
+  File "C:\Python\Python37\lib\site-packages\urllib3\request.py", line 68, in request
+    **urlopen_kw)
+  File "C:\Python\Python37\lib\site-packages\urllib3\request.py", line 89, in request_encode_url
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\Python\Python37\lib\site-packages\urllib3\poolmanager.py", line 322, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
+    **response_kw)
+  File "C:\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
+    **response_kw)
+  File "C:\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
+    **response_kw)
+  File "C:\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "C:\Python\Python37\lib\site-packages\urllib3\util\retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=4723): Max retries exceeded with url: /wd/hub/session/d7542364-b636-4879-9463-57709a123c4d/screenshot (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C5DEBF5AC8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+
+2019-04-13 17:35:50 AppRankAndSearchApp.py[line:23] INFO ----------进入APP主页
+2019-04-13 17:35:50 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-13 17:35:59 AppRankAndSearchApp.py[line:69] INFO 执行步骤“启动APP”成功
+2019-04-13 17:35:59 AppRankAndSearchApp.py[line:79] INFO 用例“进入APP主页”执行成功
+2019-04-13 17:35:59 AppRankAndSearchApp.py[line:23] INFO ----------登录
+2019-04-13 17:35:59 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-13 17:36:02 AppRankAndSearchApp.py[line:69] INFO 执行步骤“点击个人中心”成功
+2019-04-13 17:36:03 AppRankAndSearchApp.py[line:69] INFO 执行步骤“点击点击登录按钮”成功
+2019-04-13 17:36:09 AppRankAndSearchApp.py[line:69] INFO 执行步骤“输入用户名”成功
+2019-04-13 17:36:26 AppRankAndSearchApp.py[line:69] INFO 执行步骤“输入密码”成功
+2019-04-13 17:36:30 AppRankAndSearchApp.py[line:69] INFO 执行步骤“点击登录”成功
+2019-04-13 17:36:33 AppRankAndSearchApp.py[line:69] INFO 执行步骤“等待”成功
+2019-04-13 17:36:35 AppRankAndSearchApp.py[line:75] ERROR 执行步骤“断言是否登录成功”失败
+异常信息：Traceback (most recent call last):
+  File "D:\ProgramSourceCode\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 59, in assert_string_in_pagesource
+    assert assertString in driver.page_source,"%s not found in page source!" %assertString
+AssertionError: fosterwu not found in page source!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ProgramSourceCode\DataAndKeywordDrivenFrameworkForApp\TestScripts\AppRankAndSearchApp.py", line 66, in appRankAndSearchApp
+    eval(step)
+  File "<string>", line 1, in <module>
+  File "D:\ProgramSourceCode\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 61, in assert_string_in_pagesource
+    raise AssertionError(e)
+AssertionError: fosterwu not found in page source!
+
+2019-04-13 17:36:35 AppRankAndSearchApp.py[line:82] INFO 用例“登录”执行失败
+2019-04-13 17:36:35 AppRankAndSearchApp.py[line:23] INFO ----------搜索
+2019-04-13 17:36:35 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-13 17:36:39 AppRankAndSearchApp.py[line:69] INFO 执行步骤“回到首页”成功
+2019-04-13 17:36:42 AppRankAndSearchApp.py[line:69] INFO 执行步骤“等待3秒”成功
+2019-04-13 17:36:43 AppRankAndSearchApp.py[line:69] INFO 执行步骤“点击搜索框”成功
+2019-04-13 17:36:45 AppRankAndSearchApp.py[line:69] INFO 执行步骤“等待2秒”成功
+2019-04-13 17:36:50 AppRankAndSearchApp.py[line:69] INFO 执行步骤“输入搜索关键字”成功
+2019-04-13 17:36:54 AppRankAndSearchApp.py[line:69] INFO 执行步骤“等待”成功
+2019-04-13 17:36:55 AppRankAndSearchApp.py[line:69] INFO 执行步骤“选择一个搜索结果选项”成功
+2019-04-13 17:36:55 AppRankAndSearchApp.py[line:103] ERROR 驱动框架主程序发生异常
+异常信息：Traceback (most recent call last):
+  File "D:\ProgramSourceCode\DataAndKeywordDrivenFrameworkForApp\TestScripts\AppRankAndSearchApp.py", line 62, in appRankAndSearchApp
+    step = keyWord + "()"
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+
+2019-04-13 17:40:14 AppRankAndSearchApp.py[line:23] INFO ----------进入APP主页
+2019-04-13 17:40:14 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-13 17:40:24 AppRankAndSearchApp.py[line:103] ERROR 驱动框架主程序发生异常
+异常信息：Traceback (most recent call last):
+  File "C:\Python\Python37\lib\site-packages\urllib3\connection.py", line 171, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "C:\Python\Python37\lib\site-packages\urllib3\util\connection.py", line 79, in create_connection
+    raise err
+  File "C:\Python\Python37\lib\site-packages\urllib3\util\connection.py", line 69, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "C:\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 354, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "C:\Python\Python37\lib\http\client.py", line 1229, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Python\Python37\lib\http\client.py", line 1275, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Python\Python37\lib\http\client.py", line 1224, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Python\Python37\lib\http\client.py", line 1016, in _send_output
+    self.send(msg)
+  File "C:\Python\Python37\lib\http\client.py", line 956, in send
+    self.connect()
+  File "C:\Python\Python37\lib\site-packages\urllib3\connection.py", line 196, in connect
+    conn = self._new_conn()
+  File "C:\Python\Python37\lib\site-packages\urllib3\connection.py", line 180, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x0000028C37BD7B38>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ProgramSourceCode\DataAndKeywordDrivenFrameworkForApp\TestScripts\AppRankAndSearchApp.py", line 66, in appRankAndSearchApp
+    eval(step)
+  File "<string>", line 1, in <module>
+  File "D:\ProgramSourceCode\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 15, in open_app
+    raise e
+  File "D:\ProgramSourceCode\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 13, in open_app
+    driver=webdriver.Remote('http://localhost:4723/wd/hub',desired_caps)
+  File "C:\Python\Python37\lib\site-packages\appium\webdriver\webdriver.py", line 129, in __init__
+    proxy
+  File "C:\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "C:\Python\Python37\lib\site-packages\appium\webdriver\webdriver.py", line 204, in start_session
+    response = self.execute(RemoteCommand.NEW_SESSION, parameters)
+  File "C:\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "C:\Python\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "C:\Python\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 402, in _request
+    resp = http.request(method, url, body=body, headers=headers)
+  File "C:\Python\Python37\lib\site-packages\urllib3\request.py", line 72, in request
+    **urlopen_kw)
+  File "C:\Python\Python37\lib\site-packages\urllib3\request.py", line 150, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\Python\Python37\lib\site-packages\urllib3\poolmanager.py", line 322, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
+    **response_kw)
+  File "C:\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
+    **response_kw)
+  File "C:\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
+    **response_kw)
+  File "C:\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "C:\Python\Python37\lib\site-packages\urllib3\util\retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000028C37BD7B38>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ProgramSourceCode\DataAndKeywordDrivenFrameworkForApp\TestScripts\AppRankAndSearchApp.py", line 72, in appRankAndSearchApp
+    errPicPath = capture_screen()
+  File "D:\ProgramSourceCode\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 83, in capture_screen
+    raise e
+  File "D:\ProgramSourceCode\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 81, in capture_screen
+    driver.get_screenshot_as_file(picNameAndPath)
+AttributeError: 'str' object has no attribute 'get_screenshot_as_file'
+
+2019-04-13 17:40:55 AppRankAndSearchApp.py[line:23] INFO ----------进入APP主页
+2019-04-13 17:40:55 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-13 17:41:03 AppRankAndSearchApp.py[line:69] INFO 执行步骤“启动APP”成功
+2019-04-13 17:41:03 AppRankAndSearchApp.py[line:79] INFO 用例“进入APP主页”执行成功
+2019-04-13 17:41:03 AppRankAndSearchApp.py[line:23] INFO ----------登录
+2019-04-13 17:41:03 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-13 17:41:04 AppRankAndSearchApp.py[line:69] INFO 执行步骤“点击个人中心”成功
+2019-04-13 17:41:05 AppRankAndSearchApp.py[line:69] INFO 执行步骤“点击点击登录按钮”成功
+2019-04-13 17:41:11 AppRankAndSearchApp.py[line:69] INFO 执行步骤“输入用户名”成功
+2019-04-13 17:41:13 AppRankAndSearchApp.py[line:69] INFO 执行步骤“等待”成功
+2019-04-13 17:41:29 AppRankAndSearchApp.py[line:69] INFO 执行步骤“输入密码”成功
+2019-04-13 17:41:30 AppRankAndSearchApp.py[line:69] INFO 执行步骤“点击登录”成功
+2019-04-13 17:41:34 AppRankAndSearchApp.py[line:69] INFO 执行步骤“等待”成功
+2019-04-13 17:41:35 AppRankAndSearchApp.py[line:75] ERROR 执行步骤“断言是否登录成功”失败
+异常信息：Traceback (most recent call last):
+  File "D:\ProgramSourceCode\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 59, in assert_string_in_pagesource
+    assert assertString in driver.page_source,"%s not found in page source!" %assertString
+AssertionError: fosterwu not found in page source!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ProgramSourceCode\DataAndKeywordDrivenFrameworkForApp\TestScripts\AppRankAndSearchApp.py", line 66, in appRankAndSearchApp
+    eval(step)
+  File "<string>", line 1, in <module>
+  File "D:\ProgramSourceCode\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 61, in assert_string_in_pagesource
+    raise AssertionError(e)
+AssertionError: fosterwu not found in page source!
+
+2019-04-13 17:41:35 AppRankAndSearchApp.py[line:82] INFO 用例“登录”执行失败
+2019-04-13 17:41:35 AppRankAndSearchApp.py[line:23] INFO ----------搜索
+2019-04-13 17:41:35 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-13 17:41:36 AppRankAndSearchApp.py[line:69] INFO 执行步骤“回到首页”成功
+2019-04-13 17:41:39 AppRankAndSearchApp.py[line:69] INFO 执行步骤“等待3秒”成功
+2019-04-13 17:41:40 AppRankAndSearchApp.py[line:69] INFO 执行步骤“点击搜索框”成功
+2019-04-13 17:41:42 AppRankAndSearchApp.py[line:69] INFO 执行步骤“等待2秒”成功
+2019-04-13 17:41:48 AppRankAndSearchApp.py[line:69] INFO 执行步骤“输入搜索关键字”成功
+2019-04-13 17:41:52 AppRankAndSearchApp.py[line:69] INFO 执行步骤“等待”成功
+2019-04-13 17:41:53 AppRankAndSearchApp.py[line:69] INFO 执行步骤“选择一个搜索结果选项”成功
+2019-04-13 17:41:53 AppRankAndSearchApp.py[line:103] ERROR 驱动框架主程序发生异常
+异常信息：Traceback (most recent call last):
+  File "D:\ProgramSourceCode\DataAndKeywordDrivenFrameworkForApp\TestScripts\AppRankAndSearchApp.py", line 62, in appRankAndSearchApp
+    step = keyWord + "()"
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+
+2019-04-13 17:44:40 AppRankAndSearchApp.py[line:23] INFO ----------进入APP主页
+2019-04-13 17:44:40 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-13 17:44:48 AppRankAndSearchApp.py[line:69] INFO 执行步骤“启动APP”成功
+2019-04-13 17:44:48 AppRankAndSearchApp.py[line:79] INFO 用例“进入APP主页”执行成功
+2019-04-13 17:44:48 AppRankAndSearchApp.py[line:23] INFO ----------登录
+2019-04-13 17:44:48 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-13 17:44:49 AppRankAndSearchApp.py[line:69] INFO 执行步骤“点击个人中心”成功
+2019-04-13 17:44:50 AppRankAndSearchApp.py[line:69] INFO 执行步骤“点击点击登录按钮”成功
+2019-04-13 17:44:57 AppRankAndSearchApp.py[line:69] INFO 执行步骤“输入用户名”成功
+2019-04-13 17:44:59 AppRankAndSearchApp.py[line:69] INFO 执行步骤“等待”成功
+2019-04-13 17:45:04 AppRankAndSearchApp.py[line:69] INFO 执行步骤“输入密码”成功
+2019-04-13 17:45:05 AppRankAndSearchApp.py[line:69] INFO 执行步骤“点击登录”成功
+2019-04-13 17:45:08 AppRankAndSearchApp.py[line:69] INFO 执行步骤“等待”成功
+2019-04-13 17:45:09 AppRankAndSearchApp.py[line:69] INFO 执行步骤“断言是否登录成功”成功
+2019-04-13 17:45:09 AppRankAndSearchApp.py[line:79] INFO 用例“登录”执行成功
+2019-04-13 17:45:09 AppRankAndSearchApp.py[line:23] INFO ----------搜索
+2019-04-13 17:45:09 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-13 17:45:09 AppRankAndSearchApp.py[line:69] INFO 执行步骤“回到首页”成功
+2019-04-13 17:45:13 AppRankAndSearchApp.py[line:69] INFO 执行步骤“等待3秒”成功
+2019-04-13 17:45:13 AppRankAndSearchApp.py[line:69] INFO 执行步骤“点击搜索框”成功
+2019-04-13 17:45:15 AppRankAndSearchApp.py[line:69] INFO 执行步骤“等待2秒”成功
+2019-04-13 17:45:21 AppRankAndSearchApp.py[line:69] INFO 执行步骤“输入搜索关键字”成功
+2019-04-13 17:45:25 AppRankAndSearchApp.py[line:69] INFO 执行步骤“等待”成功
+2019-04-13 17:45:26 AppRankAndSearchApp.py[line:69] INFO 执行步骤“选择一个搜索结果选项”成功
+2019-04-13 17:45:26 AppRankAndSearchApp.py[line:103] ERROR 驱动框架主程序发生异常
+异常信息：Traceback (most recent call last):
+  File "D:\ProgramSourceCode\DataAndKeywordDrivenFrameworkForApp\TestScripts\AppRankAndSearchApp.py", line 62, in appRankAndSearchApp
+    step = keyWord + "()"
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+
+2019-04-13 17:47:47 AppRankAndSearchApp.py[line:23] INFO ----------进入APP主页
+2019-04-13 17:47:47 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-13 17:47:56 AppRankAndSearchApp.py[line:69] INFO 执行步骤“启动APP”成功
+2019-04-13 17:47:56 AppRankAndSearchApp.py[line:79] INFO 用例“进入APP主页”执行成功
+2019-04-13 17:47:56 AppRankAndSearchApp.py[line:23] INFO ----------登录
+2019-04-13 17:47:56 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-13 17:47:57 AppRankAndSearchApp.py[line:69] INFO 执行步骤“点击个人中心”成功
+2019-04-13 17:48:14 AppRankAndSearchApp.py[line:69] INFO 执行步骤“点击点击登录按钮”成功
+2019-04-13 17:48:20 AppRankAndSearchApp.py[line:69] INFO 执行步骤“输入用户名”成功
+2019-04-13 17:48:22 AppRankAndSearchApp.py[line:69] INFO 执行步骤“等待”成功
+2019-04-13 17:48:28 AppRankAndSearchApp.py[line:69] INFO 执行步骤“输入密码”成功
+2019-04-13 17:48:29 AppRankAndSearchApp.py[line:69] INFO 执行步骤“点击登录”成功
+2019-04-13 17:48:32 AppRankAndSearchApp.py[line:69] INFO 执行步骤“等待”成功
+2019-04-13 17:48:33 AppRankAndSearchApp.py[line:69] INFO 执行步骤“断言是否登录成功”成功
+2019-04-13 17:48:33 AppRankAndSearchApp.py[line:79] INFO 用例“登录”执行成功
+2019-04-13 17:48:33 AppRankAndSearchApp.py[line:23] INFO ----------搜索
+2019-04-13 17:48:33 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-13 17:48:33 AppRankAndSearchApp.py[line:69] INFO 执行步骤“回到首页”成功
+2019-04-13 17:48:37 AppRankAndSearchApp.py[line:69] INFO 执行步骤“等待3秒”成功
+2019-04-13 17:48:37 AppRankAndSearchApp.py[line:69] INFO 执行步骤“点击搜索框”成功
+2019-04-13 17:48:39 AppRankAndSearchApp.py[line:69] INFO 执行步骤“等待2秒”成功
+2019-04-13 17:48:45 AppRankAndSearchApp.py[line:69] INFO 执行步骤“输入搜索关键字”成功
+2019-04-13 17:48:49 AppRankAndSearchApp.py[line:69] INFO 执行步骤“等待”成功
+2019-04-13 17:48:50 AppRankAndSearchApp.py[line:69] INFO 执行步骤“选择一个搜索结果选项”成功
+2019-04-13 17:48:50 AppRankAndSearchApp.py[line:103] ERROR 驱动框架主程序发生异常
+异常信息：Traceback (most recent call last):
+  File "D:\ProgramSourceCode\DataAndKeywordDrivenFrameworkForApp\TestScripts\AppRankAndSearchApp.py", line 62, in appRankAndSearchApp
+    step = keyWord + "()"
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+
+2019-04-13 17:51:43 AppRankAndSearchApp.py[line:23] INFO ----------进入APP主页
+2019-04-13 17:51:43 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-13 17:51:54 AppRankAndSearchApp.py[line:69] INFO 执行步骤“启动APP”成功
+2019-04-13 17:51:54 AppRankAndSearchApp.py[line:79] INFO 用例“进入APP主页”执行成功
+2019-04-13 17:51:54 AppRankAndSearchApp.py[line:23] INFO ----------登录
+2019-04-13 17:51:54 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-13 17:51:55 AppRankAndSearchApp.py[line:69] INFO 执行步骤“点击个人中心”成功
+2019-04-13 17:52:04 AppRankAndSearchApp.py[line:69] INFO 执行步骤“点击点击登录按钮”成功
+2019-04-13 17:52:09 AppRankAndSearchApp.py[line:69] INFO 执行步骤“输入用户名”成功
+2019-04-13 17:52:12 AppRankAndSearchApp.py[line:69] INFO 执行步骤“等待”成功
+2019-04-13 17:52:17 AppRankAndSearchApp.py[line:69] INFO 执行步骤“输入密码”成功
+2019-04-13 17:52:18 AppRankAndSearchApp.py[line:69] INFO 执行步骤“点击登录”成功
+2019-04-13 17:52:22 AppRankAndSearchApp.py[line:69] INFO 执行步骤“等待”成功
+2019-04-13 17:52:22 AppRankAndSearchApp.py[line:69] INFO 执行步骤“断言是否登录成功”成功
+2019-04-13 17:52:22 AppRankAndSearchApp.py[line:79] INFO 用例“登录”执行成功
+2019-04-13 17:52:22 AppRankAndSearchApp.py[line:23] INFO ----------搜索
+2019-04-13 17:52:22 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-13 17:52:23 AppRankAndSearchApp.py[line:69] INFO 执行步骤“回到首页”成功
+2019-04-13 17:52:26 AppRankAndSearchApp.py[line:69] INFO 执行步骤“等待3秒”成功
+2019-04-13 17:52:27 AppRankAndSearchApp.py[line:69] INFO 执行步骤“点击搜索框”成功
+2019-04-13 17:52:29 AppRankAndSearchApp.py[line:69] INFO 执行步骤“等待2秒”成功
+2019-04-13 17:52:34 AppRankAndSearchApp.py[line:69] INFO 执行步骤“输入搜索关键字”成功
+2019-04-13 17:52:38 AppRankAndSearchApp.py[line:69] INFO 执行步骤“等待”成功
+2019-04-13 17:52:39 AppRankAndSearchApp.py[line:69] INFO 执行步骤“选择一个搜索结果选项”成功
+2019-04-13 17:52:39 AppRankAndSearchApp.py[line:103] ERROR 驱动框架主程序发生异常
+异常信息：Traceback (most recent call last):
+  File "D:\ProgramSourceCode\DataAndKeywordDrivenFrameworkForApp\TestScripts\AppRankAndSearchApp.py", line 62, in appRankAndSearchApp
+    step = keyWord + "()"
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+
+2019-04-13 17:57:12 AppRankAndSearchApp.py[line:23] INFO ----------进入APP主页
+2019-04-13 17:57:12 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-13 17:57:21 AppRankAndSearchApp.py[line:70] INFO 执行步骤“启动APP”成功
+2019-04-13 17:57:21 AppRankAndSearchApp.py[line:80] INFO 用例“进入APP主页”执行成功
+2019-04-13 17:57:21 AppRankAndSearchApp.py[line:23] INFO ----------登录
+2019-04-13 17:57:21 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-13 17:57:22 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击个人中心”成功
+2019-04-13 17:57:32 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击点击登录按钮”成功
+2019-04-13 17:57:38 AppRankAndSearchApp.py[line:70] INFO 执行步骤“输入用户名”成功
+2019-04-13 17:57:40 AppRankAndSearchApp.py[line:70] INFO 执行步骤“等待”成功
+2019-04-13 17:57:46 AppRankAndSearchApp.py[line:70] INFO 执行步骤“输入密码”成功
+2019-04-13 17:57:47 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击登录”成功
+2019-04-13 17:57:50 AppRankAndSearchApp.py[line:70] INFO 执行步骤“等待”成功
+2019-04-13 17:57:51 AppRankAndSearchApp.py[line:70] INFO 执行步骤“断言是否登录成功”成功
+2019-04-13 17:57:51 AppRankAndSearchApp.py[line:80] INFO 用例“登录”执行成功
+2019-04-13 17:57:51 AppRankAndSearchApp.py[line:23] INFO ----------搜索
+2019-04-13 17:57:51 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-13 17:57:52 AppRankAndSearchApp.py[line:70] INFO 执行步骤“回到首页”成功
+2019-04-13 17:57:55 AppRankAndSearchApp.py[line:70] INFO 执行步骤“等待3秒”成功
+2019-04-13 17:57:56 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击搜索框”成功
+2019-04-13 17:57:58 AppRankAndSearchApp.py[line:70] INFO 执行步骤“等待2秒”成功
+2019-04-13 17:58:03 AppRankAndSearchApp.py[line:70] INFO 执行步骤“输入搜索关键字”成功
+2019-04-13 17:58:08 AppRankAndSearchApp.py[line:70] INFO 执行步骤“等待”成功
+2019-04-13 17:58:09 AppRankAndSearchApp.py[line:70] INFO 执行步骤“选择一个搜索结果选项”成功
+2019-04-13 17:58:09 AppRankAndSearchApp.py[line:104] ERROR 驱动框架主程序发生异常
+异常信息：Traceback (most recent call last):
+  File "D:\ProgramSourceCode\DataAndKeywordDrivenFrameworkForApp\TestScripts\AppRankAndSearchApp.py", line 63, in appRankAndSearchApp
+    step = keyWord + "()"
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+
+2019-04-13 18:02:31 AppRankAndSearchApp.py[line:23] INFO ----------进入APP主页
+2019-04-13 18:02:31 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-13 18:02:41 AppRankAndSearchApp.py[line:70] INFO 执行步骤“启动APP”成功
+2019-04-13 18:02:41 AppRankAndSearchApp.py[line:80] INFO 用例“进入APP主页”执行成功
+2019-04-13 18:02:41 AppRankAndSearchApp.py[line:23] INFO ----------登录
+2019-04-13 18:02:41 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-13 18:02:48 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击个人中心”成功
+2019-04-13 18:02:49 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击点击登录按钮”成功
+2019-04-13 18:02:55 AppRankAndSearchApp.py[line:70] INFO 执行步骤“输入用户名”成功
+2019-04-13 18:02:57 AppRankAndSearchApp.py[line:70] INFO 执行步骤“等待”成功
+2019-04-13 18:03:04 AppRankAndSearchApp.py[line:70] INFO 执行步骤“输入密码”成功
+2019-04-13 18:03:05 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击登录”成功
+2019-04-13 18:03:08 AppRankAndSearchApp.py[line:70] INFO 执行步骤“等待”成功
+2019-04-13 18:03:08 AppRankAndSearchApp.py[line:70] INFO 执行步骤“断言是否登录成功”成功
+2019-04-13 18:03:08 AppRankAndSearchApp.py[line:80] INFO 用例“登录”执行成功
+2019-04-13 18:03:08 AppRankAndSearchApp.py[line:23] INFO ----------搜索
+2019-04-13 18:03:08 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-13 18:03:09 AppRankAndSearchApp.py[line:70] INFO 执行步骤“回到首页”成功
+2019-04-13 18:03:12 AppRankAndSearchApp.py[line:70] INFO 执行步骤“等待3秒”成功
+2019-04-13 18:03:13 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击搜索框”成功
+2019-04-13 18:03:15 AppRankAndSearchApp.py[line:70] INFO 执行步骤“等待2秒”成功
+2019-04-13 18:03:20 AppRankAndSearchApp.py[line:70] INFO 执行步骤“输入搜索关键字”成功
+2019-04-13 18:03:25 AppRankAndSearchApp.py[line:70] INFO 执行步骤“等待”成功
+2019-04-13 18:03:26 AppRankAndSearchApp.py[line:70] INFO 执行步骤“选择一个搜索结果选项”成功
+2019-04-13 18:03:58 AppRankAndSearchApp.py[line:76] ERROR 执行步骤“sleep”失败
+异常信息：Traceback (most recent call last):
+  File "D:\ProgramSourceCode\DataAndKeywordDrivenFrameworkForApp\TestScripts\AppRankAndSearchApp.py", line 67, in appRankAndSearchApp
+    eval(step)
+  File "<string>", line 1, in <module>
+  File "D:\ProgramSourceCode\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 53, in click
+    raise e
+  File "D:\ProgramSourceCode\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 51, in click
+    getElement(driver, locationType, locatorExpression).click()
+  File "D:\ProgramSourceCode\DataAndKeywordDrivenFrameworkForApp\Util\ObjectMap.py", line 11, in getElement
+    raise e
+  File "D:\ProgramSourceCode\DataAndKeywordDrivenFrameworkForApp\Util\ObjectMap.py", line 8, in getElement
+    lambda x: x.find_element(by=locationType, value = locatorExpression))
+  File "C:\Python\Python37\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+2019-04-13 18:03:58 AppRankAndSearchApp.py[line:83] INFO 用例“搜索”执行失败
+2019-04-13 18:03:58 AppRankAndSearchApp.py[line:23] INFO ----------退出服务
+2019-04-13 18:03:58 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-13 18:04:00 AppRankAndSearchApp.py[line:70] INFO 执行步骤“关闭APP”成功
+2019-04-13 18:04:00 AppRankAndSearchApp.py[line:80] INFO 用例“退出服务”执行成功
+2019-04-13 18:04:00 AppRankAndSearchApp.py[line:102] INFO 共4条用例，4条需要被执行，本次执行通过3条
+2019-04-13 18:46:34 AppRankAndSearchApp.py[line:23] INFO ----------进入APP主页
+2019-04-13 18:46:34 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-13 18:46:43 AppRankAndSearchApp.py[line:70] INFO 执行步骤“启动APP”成功
+2019-04-13 18:46:43 AppRankAndSearchApp.py[line:80] INFO 用例“进入APP主页”执行成功
+2019-04-13 18:46:43 AppRankAndSearchApp.py[line:23] INFO ----------登录
+2019-04-13 18:46:43 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-13 18:46:44 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击个人中心”成功
+2019-04-13 18:46:45 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击点击登录按钮”成功
+2019-04-13 18:46:51 AppRankAndSearchApp.py[line:70] INFO 执行步骤“输入用户名”成功
+2019-04-13 18:46:54 AppRankAndSearchApp.py[line:70] INFO 执行步骤“等待”成功
+2019-04-13 18:46:59 AppRankAndSearchApp.py[line:70] INFO 执行步骤“输入密码”成功
+2019-04-13 18:47:00 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击登录”成功
+2019-04-13 18:47:03 AppRankAndSearchApp.py[line:70] INFO 执行步骤“等待”成功
+2019-04-13 18:47:04 AppRankAndSearchApp.py[line:70] INFO 执行步骤“断言是否登录成功”成功
+2019-04-13 18:47:04 AppRankAndSearchApp.py[line:80] INFO 用例“登录”执行成功
+2019-04-13 18:47:04 AppRankAndSearchApp.py[line:23] INFO ----------搜索
+2019-04-13 18:47:04 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-13 18:47:05 AppRankAndSearchApp.py[line:70] INFO 执行步骤“回到首页”成功
+2019-04-13 18:47:08 AppRankAndSearchApp.py[line:70] INFO 执行步骤“等待3秒”成功
+2019-04-13 18:47:08 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击搜索框”成功
+2019-04-13 18:47:11 AppRankAndSearchApp.py[line:70] INFO 执行步骤“等待2秒”成功
+2019-04-13 18:47:16 AppRankAndSearchApp.py[line:70] INFO 执行步骤“输入搜索关键字”成功
+2019-04-13 18:47:20 AppRankAndSearchApp.py[line:70] INFO 执行步骤“等待”成功
+2019-04-13 18:47:21 AppRankAndSearchApp.py[line:70] INFO 执行步骤“选择一个搜索结果选项”成功
+2019-04-13 18:47:24 AppRankAndSearchApp.py[line:70] INFO 执行步骤“等待”成功
+2019-04-13 18:47:25 AppRankAndSearchApp.py[line:80] INFO 用例“搜索”执行成功
+2019-04-13 18:47:25 AppRankAndSearchApp.py[line:23] INFO ----------退出服务
+2019-04-13 18:47:25 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-13 18:47:26 AppRankAndSearchApp.py[line:70] INFO 执行步骤“关闭APP”成功
+2019-04-13 18:47:26 AppRankAndSearchApp.py[line:80] INFO 用例“退出服务”执行成功
+2019-04-13 18:47:26 AppRankAndSearchApp.py[line:102] INFO 共4条用例，4条需要被执行，本次执行通过4条
+2019-04-18 19:39:53 AppRankAndSearchApp.py[line:104] ERROR 驱动框架主程序发生异常
+异常信息：Traceback (most recent call last):
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\TestScripts\AppRankAndSearchApp.py", line 12, in appRankAndSearchApp
+    excelObj.loadWorkBook(dataFilePath)
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Util\ParseExcel.py", line 25, in loadWorkBook
+    raise e
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Util\ParseExcel.py", line 23, in loadWorkBook
+    self.workbook = openpyxl.load_workbook(excelPathAndName)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python37\lib\site-packages\openpyxl\reader\excel.py", line 311, in load_workbook
+    data_only, keep_links)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python37\lib\site-packages\openpyxl\reader\excel.py", line 126, in __init__
+    self.archive = _validate_archive(fn)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python37\lib\site-packages\openpyxl\reader\excel.py", line 98, in _validate_archive
+    archive = ZipFile(filename, 'r')
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python37\lib\zipfile.py", line 1204, in __init__
+    self.fp = io.open(file, filemode)
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\workspace\\projects\\DataAndKeywordDrivenFrameworkForApp\\TestData\\邢帅教育.xlsx'
+
+2019-04-18 19:40:38 AppRankAndSearchApp.py[line:23] INFO ----------进入APP主页
+2019-04-18 19:40:38 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-18 19:40:58 AppRankAndSearchApp.py[line:104] ERROR 驱动框架主程序发生异常
+异常信息：Traceback (most recent call last):
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\TestScripts\AppRankAndSearchApp.py", line 67, in appRankAndSearchApp
+    eval(step)
+  File "<string>", line 1, in <module>
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 15, in open_app
+    raise e
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 13, in open_app
+    driver=webdriver.Remote('http://localhost:4723/wd/hub',desired_caps)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python37\lib\site-packages\appium\webdriver\webdriver.py", line 129, in __init__
+    proxy
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python37\lib\site-packages\appium\webdriver\webdriver.py", line 204, in start_session
+    response = self.execute(RemoteCommand.NEW_SESSION, parameters)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 8. The following are available: 5EF0218223004869 (9)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\TestScripts\AppRankAndSearchApp.py", line 73, in appRankAndSearchApp
+    errPicPath = capture_screen()
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 83, in capture_screen
+    raise e
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 81, in capture_screen
+    driver.get_screenshot_as_file(picNameAndPath)
+AttributeError: 'str' object has no attribute 'get_screenshot_as_file'
+
+2019-04-18 19:41:13 AppRankAndSearchApp.py[line:23] INFO ----------进入APP主页
+2019-04-18 19:41:13 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-18 19:41:15 AppRankAndSearchApp.py[line:104] ERROR 驱动框架主程序发生异常
+异常信息：Traceback (most recent call last):
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\TestScripts\AppRankAndSearchApp.py", line 67, in appRankAndSearchApp
+    eval(step)
+  File "<string>", line 1, in <module>
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 15, in open_app
+    raise e
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 13, in open_app
+    driver=webdriver.Remote('http://localhost:4723/wd/hub',desired_caps)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python37\lib\site-packages\appium\webdriver\webdriver.py", line 129, in __init__
+    proxy
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python37\lib\site-packages\appium\webdriver\webdriver.py", line 204, in start_session
+    response = self.execute(RemoteCommand.NEW_SESSION, parameters)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 8. The following are available: 5EF0218223004869 (9)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\TestScripts\AppRankAndSearchApp.py", line 73, in appRankAndSearchApp
+    errPicPath = capture_screen()
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 83, in capture_screen
+    raise e
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 81, in capture_screen
+    driver.get_screenshot_as_file(picNameAndPath)
+AttributeError: 'str' object has no attribute 'get_screenshot_as_file'
+
+2019-04-18 19:46:49 AppRankAndSearchApp.py[line:23] INFO ----------进入APP主页
+2019-04-18 19:46:49 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-18 19:46:59 AppRankAndSearchApp.py[line:70] INFO 执行步骤“启动APP”成功
+2019-04-18 19:46:59 AppRankAndSearchApp.py[line:80] INFO 用例“进入APP主页”执行成功
+2019-04-18 19:46:59 AppRankAndSearchApp.py[line:23] INFO ----------登录
+2019-04-18 19:46:59 AppRankAndSearchApp.py[line:101] INFO 用例“登录”被设置为忽略执行
+2019-04-18 19:46:59 AppRankAndSearchApp.py[line:23] INFO ----------搜索
+2019-04-18 19:46:59 AppRankAndSearchApp.py[line:101] INFO 用例“搜索”被设置为忽略执行
+2019-04-18 19:46:59 AppRankAndSearchApp.py[line:23] INFO ----------退出服务
+2019-04-18 19:46:59 AppRankAndSearchApp.py[line:101] INFO 用例“退出服务”被设置为忽略执行
+2019-04-18 19:46:59 AppRankAndSearchApp.py[line:102] INFO 共4条用例，1条需要被执行，本次执行通过1条
+2019-04-18 19:47:15 AppRankAndSearchApp.py[line:23] INFO ----------进入APP主页
+2019-04-18 19:47:15 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-18 19:47:25 AppRankAndSearchApp.py[line:70] INFO 执行步骤“启动APP”成功
+2019-04-18 19:47:25 AppRankAndSearchApp.py[line:80] INFO 用例“进入APP主页”执行成功
+2019-04-18 19:47:25 AppRankAndSearchApp.py[line:23] INFO ----------登录
+2019-04-18 19:47:25 AppRankAndSearchApp.py[line:101] INFO 用例“登录”被设置为忽略执行
+2019-04-18 19:47:25 AppRankAndSearchApp.py[line:23] INFO ----------搜索
+2019-04-18 19:47:25 AppRankAndSearchApp.py[line:101] INFO 用例“搜索”被设置为忽略执行
+2019-04-18 19:47:25 AppRankAndSearchApp.py[line:23] INFO ----------退出服务
+2019-04-18 19:47:25 AppRankAndSearchApp.py[line:101] INFO 用例“退出服务”被设置为忽略执行
+2019-04-18 19:47:25 AppRankAndSearchApp.py[line:102] INFO 共4条用例，1条需要被执行，本次执行通过1条
+2019-04-18 19:47:56 AppRankAndSearchApp.py[line:23] INFO ----------进入APP主页
+2019-04-18 19:47:56 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-18 19:48:04 AppRankAndSearchApp.py[line:70] INFO 执行步骤“启动APP”成功
+2019-04-18 19:48:04 AppRankAndSearchApp.py[line:80] INFO 用例“进入APP主页”执行成功
+2019-04-18 19:48:04 AppRankAndSearchApp.py[line:23] INFO ----------登录
+2019-04-18 19:48:04 AppRankAndSearchApp.py[line:101] INFO 用例“登录”被设置为忽略执行
+2019-04-18 19:48:04 AppRankAndSearchApp.py[line:23] INFO ----------搜索
+2019-04-18 19:48:04 AppRankAndSearchApp.py[line:101] INFO 用例“搜索”被设置为忽略执行
+2019-04-18 19:48:04 AppRankAndSearchApp.py[line:23] INFO ----------退出服务
+2019-04-18 19:48:04 AppRankAndSearchApp.py[line:101] INFO 用例“退出服务”被设置为忽略执行
+2019-04-18 19:48:04 AppRankAndSearchApp.py[line:102] INFO 共4条用例，1条需要被执行，本次执行通过1条
+2019-04-18 20:01:07 AppRankAndSearchApp.py[line:23] INFO ----------进入APP主页
+2019-04-18 20:01:07 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-18 20:01:14 AppRankAndSearchApp.py[line:70] INFO 执行步骤“启动APP”成功
+2019-04-18 20:01:15 AppRankAndSearchApp.py[line:80] INFO 用例“进入APP主页”执行成功
+2019-04-18 20:01:15 AppRankAndSearchApp.py[line:23] INFO ----------登录
+2019-04-18 20:01:15 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-18 20:01:19 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击我的”成功
+2019-04-18 20:01:20 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击点击登录按钮”成功
+2019-04-18 20:01:26 AppRankAndSearchApp.py[line:70] INFO 执行步骤“输入用户名”成功
+2019-04-18 20:01:28 AppRankAndSearchApp.py[line:70] INFO 执行步骤“等待”成功
+2019-04-18 20:01:34 AppRankAndSearchApp.py[line:70] INFO 执行步骤“输入密码”成功
+2019-04-18 20:01:35 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击登录”成功
+2019-04-18 20:01:38 AppRankAndSearchApp.py[line:70] INFO 执行步骤“等待”成功
+2019-04-18 20:01:40 AppRankAndSearchApp.py[line:76] ERROR 执行步骤“断言是否登录成功”失败
+异常信息：Traceback (most recent call last):
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 59, in assert_string_in_pagesource
+    assert assertString in driver.page_source,"%s not found in page source!" %assertString
+AssertionError: 科普浩 not found in page source!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\TestScripts\AppRankAndSearchApp.py", line 67, in appRankAndSearchApp
+    eval(step)
+  File "<string>", line 1, in <module>
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 61, in assert_string_in_pagesource
+    raise AssertionError(e)
+AssertionError: 科普浩 not found in page source!
+
+2019-04-18 20:01:40 AppRankAndSearchApp.py[line:83] INFO 用例“登录”执行失败
+2019-04-18 20:01:40 AppRankAndSearchApp.py[line:23] INFO ----------搜索
+2019-04-18 20:01:40 AppRankAndSearchApp.py[line:101] INFO 用例“搜索”被设置为忽略执行
+2019-04-18 20:01:40 AppRankAndSearchApp.py[line:23] INFO ----------退出服务
+2019-04-18 20:01:40 AppRankAndSearchApp.py[line:101] INFO 用例“退出服务”被设置为忽略执行
+2019-04-18 20:01:40 AppRankAndSearchApp.py[line:102] INFO 共4条用例，2条需要被执行，本次执行通过1条
+2019-04-18 20:05:45 AppRankAndSearchApp.py[line:23] INFO ----------进入APP主页
+2019-04-18 20:05:45 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-18 20:05:52 AppRankAndSearchApp.py[line:70] INFO 执行步骤“启动APP”成功
+2019-04-18 20:05:52 AppRankAndSearchApp.py[line:80] INFO 用例“进入APP主页”执行成功
+2019-04-18 20:05:52 AppRankAndSearchApp.py[line:23] INFO ----------登录
+2019-04-18 20:05:52 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-18 20:05:56 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击我的”成功
+2019-04-18 20:05:57 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击点击登录按钮”成功
+2019-04-18 20:06:03 AppRankAndSearchApp.py[line:70] INFO 执行步骤“输入用户名”成功
+2019-04-18 20:06:05 AppRankAndSearchApp.py[line:70] INFO 执行步骤“等待”成功
+2019-04-18 20:06:11 AppRankAndSearchApp.py[line:70] INFO 执行步骤“输入密码”成功
+2019-04-18 20:06:12 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击登录”成功
+2019-04-18 20:06:15 AppRankAndSearchApp.py[line:70] INFO 执行步骤“等待”成功
+2019-04-18 20:06:15 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击我的”成功
+2019-04-18 20:06:16 AppRankAndSearchApp.py[line:70] INFO 执行步骤“断言是否登录成功”成功
+2019-04-18 20:06:16 AppRankAndSearchApp.py[line:80] INFO 用例“登录”执行成功
+2019-04-18 20:06:16 AppRankAndSearchApp.py[line:23] INFO ----------搜索
+2019-04-18 20:06:16 AppRankAndSearchApp.py[line:101] INFO 用例“搜索”被设置为忽略执行
+2019-04-18 20:06:16 AppRankAndSearchApp.py[line:23] INFO ----------退出服务
+2019-04-18 20:06:16 AppRankAndSearchApp.py[line:101] INFO 用例“退出服务”被设置为忽略执行
+2019-04-18 20:06:16 AppRankAndSearchApp.py[line:102] INFO 共4条用例，2条需要被执行，本次执行通过2条
+2019-04-18 20:11:42 AppRankAndSearchApp.py[line:23] INFO ----------进入APP主页
+2019-04-18 20:11:42 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-18 20:11:50 AppRankAndSearchApp.py[line:70] INFO 执行步骤“启动APP”成功
+2019-04-18 20:11:50 AppRankAndSearchApp.py[line:80] INFO 用例“进入APP主页”执行成功
+2019-04-18 20:11:50 AppRankAndSearchApp.py[line:23] INFO ----------登录
+2019-04-18 20:11:50 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-18 20:11:55 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击我的”成功
+2019-04-18 20:12:23 AppRankAndSearchApp.py[line:23] INFO ----------进入APP主页
+2019-04-18 20:12:23 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-18 20:12:30 AppRankAndSearchApp.py[line:70] INFO 执行步骤“启动APP”成功
+2019-04-18 20:12:30 AppRankAndSearchApp.py[line:80] INFO 用例“进入APP主页”执行成功
+2019-04-18 20:12:30 AppRankAndSearchApp.py[line:23] INFO ----------登录
+2019-04-18 20:12:30 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-18 20:12:34 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击我的”成功
+2019-04-18 20:12:35 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击点击登录按钮”成功
+2019-04-18 20:12:41 AppRankAndSearchApp.py[line:23] INFO ----------进入APP主页
+2019-04-18 20:12:41 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-18 20:12:53 AppRankAndSearchApp.py[line:23] INFO ----------进入APP主页
+2019-04-18 20:12:53 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-18 20:13:00 AppRankAndSearchApp.py[line:70] INFO 执行步骤“启动APP”成功
+2019-04-18 20:13:00 AppRankAndSearchApp.py[line:80] INFO 用例“进入APP主页”执行成功
+2019-04-18 20:13:00 AppRankAndSearchApp.py[line:23] INFO ----------登录
+2019-04-18 20:13:00 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-18 20:13:07 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击我的”成功
+2019-04-18 20:13:08 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击点击登录按钮”成功
+2019-04-18 20:13:15 AppRankAndSearchApp.py[line:70] INFO 执行步骤“输入用户名”成功
+2019-04-18 20:13:17 AppRankAndSearchApp.py[line:70] INFO 执行步骤“等待”成功
+2019-04-18 20:13:22 AppRankAndSearchApp.py[line:70] INFO 执行步骤“输入密码”成功
+2019-04-18 20:13:23 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击登录”成功
+2019-04-18 20:13:26 AppRankAndSearchApp.py[line:70] INFO 执行步骤“等待”成功
+2019-04-18 20:13:27 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击我的”成功
+2019-04-18 20:13:27 AppRankAndSearchApp.py[line:70] INFO 执行步骤“断言是否登录成功”成功
+2019-04-18 20:13:28 AppRankAndSearchApp.py[line:80] INFO 用例“登录”执行成功
+2019-04-18 20:13:28 AppRankAndSearchApp.py[line:23] INFO ----------搜索
+2019-04-18 20:13:28 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-18 20:13:28 AppRankAndSearchApp.py[line:70] INFO 执行步骤“回到首页”成功
+2019-04-18 20:13:31 AppRankAndSearchApp.py[line:70] INFO 执行步骤“等待3秒”成功
+2019-04-18 20:13:34 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击搜索框”成功
+2019-04-18 20:13:36 AppRankAndSearchApp.py[line:70] INFO 执行步骤“等待2秒”成功
+2019-04-18 20:13:41 AppRankAndSearchApp.py[line:70] INFO 执行步骤“输入搜索关键字”成功
+2019-04-18 20:13:45 AppRankAndSearchApp.py[line:70] INFO 执行步骤“等待”成功
+2019-04-18 20:13:45 AppRankAndSearchApp.py[line:80] INFO 用例“搜索”执行成功
+2019-04-18 20:13:45 AppRankAndSearchApp.py[line:23] INFO ----------退出服务
+2019-04-18 20:13:45 AppRankAndSearchApp.py[line:101] INFO 用例“退出服务”被设置为忽略执行
+2019-04-18 20:13:45 AppRankAndSearchApp.py[line:102] INFO 共4条用例，3条需要被执行，本次执行通过3条
+2019-04-18 20:20:08 AppRankAndSearchApp.py[line:23] INFO ----------进入APP主页
+2019-04-18 20:20:08 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-18 20:20:15 AppRankAndSearchApp.py[line:70] INFO 执行步骤“启动APP”成功
+2019-04-18 20:20:16 AppRankAndSearchApp.py[line:80] INFO 用例“进入APP主页”执行成功
+2019-04-18 20:20:16 AppRankAndSearchApp.py[line:23] INFO ----------登录
+2019-04-18 20:20:16 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-18 20:20:19 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击我的”成功
+2019-04-18 20:20:37 AppRankAndSearchApp.py[line:23] INFO ----------进入APP主页
+2019-04-18 20:20:37 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-18 20:20:44 AppRankAndSearchApp.py[line:70] INFO 执行步骤“启动APP”成功
+2019-04-18 20:20:44 AppRankAndSearchApp.py[line:80] INFO 用例“进入APP主页”执行成功
+2019-04-18 20:20:44 AppRankAndSearchApp.py[line:23] INFO ----------登录
+2019-04-18 20:20:44 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-18 20:20:49 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击我的”成功
+2019-04-18 20:21:12 AppRankAndSearchApp.py[line:23] INFO ----------进入APP主页
+2019-04-18 20:21:12 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-18 20:21:19 AppRankAndSearchApp.py[line:70] INFO 执行步骤“启动APP”成功
+2019-04-18 20:21:19 AppRankAndSearchApp.py[line:80] INFO 用例“进入APP主页”执行成功
+2019-04-18 20:21:19 AppRankAndSearchApp.py[line:23] INFO ----------登录
+2019-04-18 20:21:19 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-18 20:21:23 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击我的”成功
+2019-04-18 20:21:24 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击点击登录按钮”成功
+2019-04-18 20:21:50 AppRankAndSearchApp.py[line:23] INFO ----------进入APP主页
+2019-04-18 20:21:50 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-18 20:21:57 AppRankAndSearchApp.py[line:70] INFO 执行步骤“启动APP”成功
+2019-04-18 20:21:57 AppRankAndSearchApp.py[line:80] INFO 用例“进入APP主页”执行成功
+2019-04-18 20:21:57 AppRankAndSearchApp.py[line:23] INFO ----------登录
+2019-04-18 20:21:57 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-18 20:22:01 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击我的”成功
+2019-04-18 20:22:02 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击点击登录按钮”成功
+2019-04-18 20:22:08 AppRankAndSearchApp.py[line:70] INFO 执行步骤“输入用户名”成功
+2019-04-18 20:22:10 AppRankAndSearchApp.py[line:70] INFO 执行步骤“等待”成功
+2019-04-18 20:22:16 AppRankAndSearchApp.py[line:70] INFO 执行步骤“输入密码”成功
+2019-04-18 20:22:16 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击登录”成功
+2019-04-18 20:22:20 AppRankAndSearchApp.py[line:70] INFO 执行步骤“等待”成功
+2019-04-18 20:22:20 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击我的”成功
+2019-04-18 20:22:22 AppRankAndSearchApp.py[line:76] ERROR 执行步骤“断言是否登录成功”失败
+异常信息：Traceback (most recent call last):
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 59, in assert_string_in_pagesource
+    assert assertString in driver.page_source,"%s not found in page source!" %assertString
+AssertionError: 科普浩 not found in page source!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\TestScripts\AppRankAndSearchApp.py", line 67, in appRankAndSearchApp
+    eval(step)
+  File "<string>", line 1, in <module>
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 61, in assert_string_in_pagesource
+    raise AssertionError(e)
+AssertionError: 科普浩 not found in page source!
+
+2019-04-18 20:22:22 AppRankAndSearchApp.py[line:83] INFO 用例“登录”执行失败
+2019-04-18 20:22:22 AppRankAndSearchApp.py[line:23] INFO ----------搜索
+2019-04-18 20:22:22 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-18 20:22:23 AppRankAndSearchApp.py[line:70] INFO 执行步骤“回到首页”成功
+2019-04-18 20:22:26 AppRankAndSearchApp.py[line:70] INFO 执行步骤“等待3秒”成功
+2019-04-18 20:22:27 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击搜索框”成功
+2019-04-18 20:22:29 AppRankAndSearchApp.py[line:70] INFO 执行步骤“等待2秒”成功
+2019-04-18 20:22:34 AppRankAndSearchApp.py[line:70] INFO 执行步骤“输入搜索关键字”成功
+2019-04-18 20:22:38 AppRankAndSearchApp.py[line:70] INFO 执行步骤“等待”成功
+2019-04-18 20:22:38 AppRankAndSearchApp.py[line:80] INFO 用例“搜索”执行成功
+2019-04-18 20:22:38 AppRankAndSearchApp.py[line:23] INFO ----------退出登录
+2019-04-18 20:22:38 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-18 20:30:32 AppRankAndSearchApp.py[line:23] INFO ----------进入APP主页
+2019-04-18 20:30:32 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-18 20:30:39 AppRankAndSearchApp.py[line:70] INFO 执行步骤“启动APP”成功
+2019-04-18 20:30:39 AppRankAndSearchApp.py[line:80] INFO 用例“进入APP主页”执行成功
+2019-04-18 20:30:39 AppRankAndSearchApp.py[line:23] INFO ----------登录
+2019-04-18 20:30:39 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-18 20:30:44 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击我的”成功
+2019-04-18 20:30:45 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击点击登录按钮”成功
+2019-04-18 20:30:51 AppRankAndSearchApp.py[line:70] INFO 执行步骤“输入用户名”成功
+2019-04-18 20:30:53 AppRankAndSearchApp.py[line:70] INFO 执行步骤“等待”成功
+2019-04-18 20:30:58 AppRankAndSearchApp.py[line:70] INFO 执行步骤“输入密码”成功
+2019-04-18 20:30:59 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击登录”成功
+2019-04-18 20:31:02 AppRankAndSearchApp.py[line:70] INFO 执行步骤“等待”成功
+2019-04-18 20:31:03 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击我的”成功
+2019-04-18 20:31:05 AppRankAndSearchApp.py[line:70] INFO 执行步骤“等待”成功
+2019-04-18 20:31:05 AppRankAndSearchApp.py[line:70] INFO 执行步骤“断言是否登录成功”成功
+2019-04-18 20:31:05 AppRankAndSearchApp.py[line:80] INFO 用例“登录”执行成功
+2019-04-18 20:31:05 AppRankAndSearchApp.py[line:23] INFO ----------搜索
+2019-04-18 20:31:05 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-18 20:31:06 AppRankAndSearchApp.py[line:70] INFO 执行步骤“回到首页”成功
+2019-04-18 20:31:09 AppRankAndSearchApp.py[line:70] INFO 执行步骤“等待3秒”成功
+2019-04-18 20:31:10 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击搜索框”成功
+2019-04-18 20:31:12 AppRankAndSearchApp.py[line:70] INFO 执行步骤“等待2秒”成功
+2019-04-18 20:31:17 AppRankAndSearchApp.py[line:70] INFO 执行步骤“输入搜索关键字”成功
+2019-04-18 20:31:18 AppRankAndSearchApp.py[line:70] INFO 执行步骤“搜索”成功
+2019-04-18 20:31:22 AppRankAndSearchApp.py[line:70] INFO 执行步骤“等待”成功
+2019-04-18 20:31:53 AppRankAndSearchApp.py[line:76] ERROR 执行步骤“返回首页”失败
+异常信息：Traceback (most recent call last):
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\TestScripts\AppRankAndSearchApp.py", line 67, in appRankAndSearchApp
+    eval(step)
+  File "<string>", line 1, in <module>
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 53, in click
+    raise e
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 51, in click
+    getElement(driver, locationType, locatorExpression).click()
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Util\ObjectMap.py", line 11, in getElement
+    raise e
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Util\ObjectMap.py", line 8, in getElement
+    lambda x: x.find_element(by=locationType, value = locatorExpression))
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+2019-04-18 20:31:53 AppRankAndSearchApp.py[line:83] INFO 用例“搜索”执行失败
+2019-04-18 20:31:53 AppRankAndSearchApp.py[line:23] INFO ----------退出登录
+2019-04-18 20:31:53 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-18 20:32:01 AppRankAndSearchApp.py[line:70] INFO 执行步骤“进入我的页面”成功
+2019-04-18 20:32:05 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击设置按钮”成功
+2019-04-18 20:32:08 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击退出按钮”成功
+2019-04-18 20:32:08 AppRankAndSearchApp.py[line:80] INFO 用例“退出登录”执行成功
+2019-04-18 20:32:08 AppRankAndSearchApp.py[line:102] INFO 共4条用例，4条需要被执行，本次执行通过3条
+2019-04-18 20:36:44 AppRankAndSearchApp.py[line:23] INFO ----------进入APP主页
+2019-04-18 20:36:44 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-18 20:36:51 AppRankAndSearchApp.py[line:70] INFO 执行步骤“启动APP”成功
+2019-04-18 20:36:51 AppRankAndSearchApp.py[line:80] INFO 用例“进入APP主页”执行成功
+2019-04-18 20:36:51 AppRankAndSearchApp.py[line:23] INFO ----------登录
+2019-04-18 20:36:51 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-18 20:36:55 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击我的”成功
+2019-04-18 20:36:57 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击点击登录按钮”成功
+2019-04-18 20:37:03 AppRankAndSearchApp.py[line:70] INFO 执行步骤“输入用户名”成功
+2019-04-18 20:37:05 AppRankAndSearchApp.py[line:70] INFO 执行步骤“等待”成功
+2019-04-18 20:37:11 AppRankAndSearchApp.py[line:70] INFO 执行步骤“输入密码”成功
+2019-04-18 20:37:11 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击登录”成功
+2019-04-18 20:37:14 AppRankAndSearchApp.py[line:70] INFO 执行步骤“等待”成功
+2019-04-18 20:37:15 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击我的”成功
+2019-04-18 20:37:17 AppRankAndSearchApp.py[line:70] INFO 执行步骤“等待”成功
+2019-04-18 20:37:18 AppRankAndSearchApp.py[line:70] INFO 执行步骤“断言是否登录成功”成功
+2019-04-18 20:37:18 AppRankAndSearchApp.py[line:80] INFO 用例“登录”执行成功
+2019-04-18 20:37:18 AppRankAndSearchApp.py[line:23] INFO ----------搜索
+2019-04-18 20:37:18 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-18 20:37:18 AppRankAndSearchApp.py[line:70] INFO 执行步骤“回到首页”成功
+2019-04-18 20:37:21 AppRankAndSearchApp.py[line:70] INFO 执行步骤“等待3秒”成功
+2019-04-18 20:37:22 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击搜索框”成功
+2019-04-18 20:37:24 AppRankAndSearchApp.py[line:70] INFO 执行步骤“等待2秒”成功
+2019-04-18 20:37:29 AppRankAndSearchApp.py[line:70] INFO 执行步骤“输入搜索关键字”成功
+2019-04-18 20:37:30 AppRankAndSearchApp.py[line:70] INFO 执行步骤“搜索”成功
+2019-04-18 20:37:34 AppRankAndSearchApp.py[line:70] INFO 执行步骤“等待”成功
+2019-04-18 20:37:35 AppRankAndSearchApp.py[line:70] INFO 执行步骤“返回首页”成功
+2019-04-18 20:37:35 AppRankAndSearchApp.py[line:80] INFO 用例“搜索”执行成功
+2019-04-18 20:37:35 AppRankAndSearchApp.py[line:23] INFO ----------退出登录
+2019-04-18 20:37:35 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-18 20:37:36 AppRankAndSearchApp.py[line:70] INFO 执行步骤“进入我的页面”成功
+2019-04-18 20:37:39 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击设置按钮”成功
+2019-04-18 20:37:43 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击退出按钮”成功
+2019-04-18 20:37:46 AppRankAndSearchApp.py[line:70] INFO 执行步骤“确认退出”成功
+2019-04-18 20:37:46 AppRankAndSearchApp.py[line:80] INFO 用例“退出登录”执行成功
+2019-04-18 20:37:46 AppRankAndSearchApp.py[line:102] INFO 共4条用例，4条需要被执行，本次执行通过4条
+2019-04-18 20:38:03 AppRankAndSearchApp.py[line:23] INFO ----------进入APP主页
+2019-04-18 20:38:03 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-18 20:38:10 AppRankAndSearchApp.py[line:70] INFO 执行步骤“启动APP”成功
+2019-04-18 20:38:10 AppRankAndSearchApp.py[line:80] INFO 用例“进入APP主页”执行成功
+2019-04-18 20:38:10 AppRankAndSearchApp.py[line:23] INFO ----------登录
+2019-04-18 20:38:10 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-18 20:38:13 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击我的”成功
+2019-04-18 20:38:14 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击点击登录按钮”成功
+2019-04-18 20:38:20 AppRankAndSearchApp.py[line:70] INFO 执行步骤“输入用户名”成功
+2019-04-18 20:38:22 AppRankAndSearchApp.py[line:70] INFO 执行步骤“等待”成功
+2019-04-18 20:38:28 AppRankAndSearchApp.py[line:70] INFO 执行步骤“输入密码”成功
+2019-04-18 20:38:29 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击登录”成功
+2019-04-18 20:38:32 AppRankAndSearchApp.py[line:70] INFO 执行步骤“等待”成功
+2019-04-18 20:38:32 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击我的”成功
+2019-04-18 20:38:35 AppRankAndSearchApp.py[line:70] INFO 执行步骤“等待”成功
+2019-04-18 20:38:35 AppRankAndSearchApp.py[line:70] INFO 执行步骤“断言是否登录成功”成功
+2019-04-18 20:38:35 AppRankAndSearchApp.py[line:80] INFO 用例“登录”执行成功
+2019-04-18 20:38:35 AppRankAndSearchApp.py[line:23] INFO ----------搜索
+2019-04-18 20:38:35 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-18 20:38:35 AppRankAndSearchApp.py[line:70] INFO 执行步骤“回到首页”成功
+2019-04-18 20:38:39 AppRankAndSearchApp.py[line:70] INFO 执行步骤“等待3秒”成功
+2019-04-18 20:38:39 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击搜索框”成功
+2019-04-18 20:38:41 AppRankAndSearchApp.py[line:70] INFO 执行步骤“等待2秒”成功
+2019-04-18 20:38:46 AppRankAndSearchApp.py[line:70] INFO 执行步骤“输入搜索关键字”成功
+2019-04-18 20:38:47 AppRankAndSearchApp.py[line:70] INFO 执行步骤“搜索”成功
+2019-04-18 20:38:51 AppRankAndSearchApp.py[line:70] INFO 执行步骤“等待”成功
+2019-04-18 20:38:52 AppRankAndSearchApp.py[line:70] INFO 执行步骤“返回首页”成功
+2019-04-18 20:38:52 AppRankAndSearchApp.py[line:80] INFO 用例“搜索”执行成功
+2019-04-18 20:38:52 AppRankAndSearchApp.py[line:23] INFO ----------退出登录
+2019-04-18 20:38:52 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-18 20:38:53 AppRankAndSearchApp.py[line:70] INFO 执行步骤“进入我的页面”成功
+2019-04-18 20:38:57 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击设置按钮”成功
+2019-04-18 20:39:00 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击退出按钮”成功
+2019-04-18 20:39:03 AppRankAndSearchApp.py[line:70] INFO 执行步骤“确认退出”成功
+2019-04-18 20:39:03 AppRankAndSearchApp.py[line:80] INFO 用例“退出登录”执行成功
+2019-04-18 20:39:03 AppRankAndSearchApp.py[line:102] INFO 共4条用例，4条需要被执行，本次执行通过4条
+2019-04-19 13:21:10 AppRankAndSearchApp.py[line:23] INFO ----------进入APP主页
+2019-04-19 13:21:10 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-19 13:21:10 AppRankAndSearchApp.py[line:104] ERROR 驱动框架主程序发生异常
+异常信息：Traceback (most recent call last):
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\TestScripts\AppRankAndSearchApp.py", line 67, in appRankAndSearchApp
+    eval(step)
+  File "<string>", line 1, in <module>
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 15, in open_app
+    raise e
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 12, in open_app
+    desired_caps = getDesiredcaps()
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Util\GetDesiredcaps.py", line 6, in getDesiredcaps
+    pc=ParseConfigFile(desiredcapsFilePath)
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Util\ParseConfigFile.py", line 7, in __init__
+    self.cf.read(path)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python37\lib\configparser.py", line 696, in read
+    self._read(fp, filename)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python37\lib\configparser.py", line 1014, in _read
+    for lineno, line in enumerate(fp, start=1):
+UnicodeDecodeError: 'gbk' codec can't decode byte 0x80 in position 240: illegal multibyte sequence
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\TestScripts\AppRankAndSearchApp.py", line 73, in appRankAndSearchApp
+    errPicPath = capture_screen()
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 83, in capture_screen
+    raise e
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 81, in capture_screen
+    driver.get_screenshot_as_file(picNameAndPath)
+AttributeError: 'str' object has no attribute 'get_screenshot_as_file'
+
+2019-04-19 13:21:42 AppRankAndSearchApp.py[line:23] INFO ----------进入APP主页
+2019-04-19 13:21:42 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-19 13:21:42 AppRankAndSearchApp.py[line:104] ERROR 驱动框架主程序发生异常
+异常信息：Traceback (most recent call last):
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\TestScripts\AppRankAndSearchApp.py", line 67, in appRankAndSearchApp
+    eval(step)
+  File "<string>", line 1, in <module>
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 15, in open_app
+    raise e
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 12, in open_app
+    desired_caps = getDesiredcaps()
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Util\GetDesiredcaps.py", line 6, in getDesiredcaps
+    pc=ParseConfigFile(desiredcapsFilePath)
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Util\ParseConfigFile.py", line 7, in __init__
+    self.cf.read(path)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python37\lib\configparser.py", line 696, in read
+    self._read(fp, filename)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python37\lib\configparser.py", line 1014, in _read
+    for lineno, line in enumerate(fp, start=1):
+UnicodeDecodeError: 'gbk' codec can't decode byte 0x80 in position 240: illegal multibyte sequence
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\TestScripts\AppRankAndSearchApp.py", line 73, in appRankAndSearchApp
+    errPicPath = capture_screen()
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 83, in capture_screen
+    raise e
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 81, in capture_screen
+    driver.get_screenshot_as_file(picNameAndPath)
+AttributeError: 'str' object has no attribute 'get_screenshot_as_file'
+
+2019-04-19 13:22:15 AppRankAndSearchApp.py[line:23] INFO ----------进入APP主页
+2019-04-19 13:22:15 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-19 13:22:15 AppRankAndSearchApp.py[line:104] ERROR 驱动框架主程序发生异常
+异常信息：Traceback (most recent call last):
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\TestScripts\AppRankAndSearchApp.py", line 67, in appRankAndSearchApp
+    eval(step)
+  File "<string>", line 1, in <module>
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 15, in open_app
+    raise e
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 12, in open_app
+    desired_caps = getDesiredcaps()
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Util\GetDesiredcaps.py", line 6, in getDesiredcaps
+    pc=ParseConfigFile(desiredcapsFilePath)
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Util\ParseConfigFile.py", line 7, in __init__
+    self.cf.read(path)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python37\lib\configparser.py", line 696, in read
+    self._read(fp, filename)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python37\lib\configparser.py", line 1014, in _read
+    for lineno, line in enumerate(fp, start=1):
+UnicodeDecodeError: 'gbk' codec can't decode byte 0x80 in position 240: illegal multibyte sequence
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\TestScripts\AppRankAndSearchApp.py", line 73, in appRankAndSearchApp
+    errPicPath = capture_screen()
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 83, in capture_screen
+    raise e
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 81, in capture_screen
+    driver.get_screenshot_as_file(picNameAndPath)
+AttributeError: 'str' object has no attribute 'get_screenshot_as_file'
+
+2019-04-19 13:23:44 AppRankAndSearchApp.py[line:23] INFO ----------进入APP主页
+2019-04-19 13:23:44 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-19 13:23:44 AppRankAndSearchApp.py[line:104] ERROR 驱动框架主程序发生异常
+异常信息：Traceback (most recent call last):
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\TestScripts\AppRankAndSearchApp.py", line 67, in appRankAndSearchApp
+    eval(step)
+  File "<string>", line 1, in <module>
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 15, in open_app
+    raise e
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 12, in open_app
+    desired_caps = getDesiredcaps()
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Util\GetDesiredcaps.py", line 6, in getDesiredcaps
+    pc=ParseConfigFile(desiredcapsFilePath)
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Util\ParseConfigFile.py", line 7, in __init__
+    self.cf.read(path)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python37\lib\configparser.py", line 696, in read
+    self._read(fp, filename)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python37\lib\configparser.py", line 1014, in _read
+    for lineno, line in enumerate(fp, start=1):
+UnicodeDecodeError: 'gbk' codec can't decode byte 0x80 in position 240: illegal multibyte sequence
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\TestScripts\AppRankAndSearchApp.py", line 73, in appRankAndSearchApp
+    errPicPath = capture_screen()
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 83, in capture_screen
+    raise e
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 81, in capture_screen
+    driver.get_screenshot_as_file(picNameAndPath)
+AttributeError: 'str' object has no attribute 'get_screenshot_as_file'
+
+2019-04-19 13:24:25 AppRankAndSearchApp.py[line:23] INFO ----------进入APP主页
+2019-04-19 13:24:25 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-19 13:24:25 AppRankAndSearchApp.py[line:104] ERROR 驱动框架主程序发生异常
+异常信息：Traceback (most recent call last):
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\TestScripts\AppRankAndSearchApp.py", line 67, in appRankAndSearchApp
+    eval(step)
+  File "<string>", line 1, in <module>
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 15, in open_app
+    raise e
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 12, in open_app
+    desired_caps = getDesiredcaps()
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Util\GetDesiredcaps.py", line 6, in getDesiredcaps
+    pc=ParseConfigFile(desiredcapsFilePath)
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Util\ParseConfigFile.py", line 7, in __init__
+    self.cf.read(path)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python37\lib\configparser.py", line 696, in read
+    self._read(fp, filename)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python37\lib\configparser.py", line 1014, in _read
+    for lineno, line in enumerate(fp, start=1):
+UnicodeDecodeError: 'gbk' codec can't decode byte 0x80 in position 240: illegal multibyte sequence
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\TestScripts\AppRankAndSearchApp.py", line 73, in appRankAndSearchApp
+    errPicPath = capture_screen()
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 83, in capture_screen
+    raise e
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 81, in capture_screen
+    driver.get_screenshot_as_file(picNameAndPath)
+AttributeError: 'str' object has no attribute 'get_screenshot_as_file'
+
+2019-04-19 13:25:32 AppRankAndSearchApp.py[line:23] INFO ----------进入APP主页
+2019-04-19 13:25:32 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-19 13:25:32 AppRankAndSearchApp.py[line:104] ERROR 驱动框架主程序发生异常
+异常信息：Traceback (most recent call last):
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\TestScripts\AppRankAndSearchApp.py", line 67, in appRankAndSearchApp
+    eval(step)
+  File "<string>", line 1, in <module>
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 15, in open_app
+    raise e
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 12, in open_app
+    desired_caps = getDesiredcaps()
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Util\GetDesiredcaps.py", line 6, in getDesiredcaps
+    pc=ParseConfigFile(desiredcapsFilePath)
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Util\ParseConfigFile.py", line 7, in __init__
+    self.cf.read(path)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python37\lib\configparser.py", line 696, in read
+    self._read(fp, filename)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python37\lib\configparser.py", line 1014, in _read
+    for lineno, line in enumerate(fp, start=1):
+UnicodeDecodeError: 'gbk' codec can't decode byte 0x80 in position 240: illegal multibyte sequence
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\TestScripts\AppRankAndSearchApp.py", line 73, in appRankAndSearchApp
+    errPicPath = capture_screen()
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 83, in capture_screen
+    raise e
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 81, in capture_screen
+    driver.get_screenshot_as_file(picNameAndPath)
+AttributeError: 'str' object has no attribute 'get_screenshot_as_file'
+
+2019-04-19 13:27:24 AppRankAndSearchApp.py[line:23] INFO ----------进入APP主页
+2019-04-19 13:27:24 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-19 13:27:24 AppRankAndSearchApp.py[line:104] ERROR 驱动框架主程序发生异常
+异常信息：Traceback (most recent call last):
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\TestScripts\AppRankAndSearchApp.py", line 67, in appRankAndSearchApp
+    eval(step)
+  File "<string>", line 1, in <module>
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 15, in open_app
+    raise e
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 12, in open_app
+    desired_caps = getDesiredcaps()
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Util\GetDesiredcaps.py", line 6, in getDesiredcaps
+    pc=ParseConfigFile(desiredcapsFilePath)
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Util\ParseConfigFile.py", line 7, in __init__
+    self.cf.read(path)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python37\lib\configparser.py", line 696, in read
+    self._read(fp, filename)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python37\lib\configparser.py", line 1014, in _read
+    for lineno, line in enumerate(fp, start=1):
+UnicodeDecodeError: 'gbk' codec can't decode byte 0x80 in position 240: illegal multibyte sequence
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\TestScripts\AppRankAndSearchApp.py", line 73, in appRankAndSearchApp
+    errPicPath = capture_screen()
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 83, in capture_screen
+    raise e
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 81, in capture_screen
+    driver.get_screenshot_as_file(picNameAndPath)
+AttributeError: 'str' object has no attribute 'get_screenshot_as_file'
+
+2019-04-19 13:27:30 AppRankAndSearchApp.py[line:23] INFO ----------进入APP主页
+2019-04-19 13:27:30 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-19 13:27:30 AppRankAndSearchApp.py[line:104] ERROR 驱动框架主程序发生异常
+异常信息：Traceback (most recent call last):
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\TestScripts\AppRankAndSearchApp.py", line 67, in appRankAndSearchApp
+    eval(step)
+  File "<string>", line 1, in <module>
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 15, in open_app
+    raise e
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 12, in open_app
+    desired_caps = getDesiredcaps()
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Util\GetDesiredcaps.py", line 6, in getDesiredcaps
+    pc=ParseConfigFile(desiredcapsFilePath)
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Util\ParseConfigFile.py", line 7, in __init__
+    self.cf.read(path)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python37\lib\configparser.py", line 696, in read
+    self._read(fp, filename)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python37\lib\configparser.py", line 1014, in _read
+    for lineno, line in enumerate(fp, start=1):
+UnicodeDecodeError: 'gbk' codec can't decode byte 0x80 in position 240: illegal multibyte sequence
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\TestScripts\AppRankAndSearchApp.py", line 73, in appRankAndSearchApp
+    errPicPath = capture_screen()
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 83, in capture_screen
+    raise e
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 81, in capture_screen
+    driver.get_screenshot_as_file(picNameAndPath)
+AttributeError: 'str' object has no attribute 'get_screenshot_as_file'
+
+2019-04-19 13:28:05 AppRankAndSearchApp.py[line:23] INFO ----------进入APP主页
+2019-04-19 13:28:05 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-19 13:28:05 AppRankAndSearchApp.py[line:104] ERROR 驱动框架主程序发生异常
+异常信息：Traceback (most recent call last):
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\TestScripts\AppRankAndSearchApp.py", line 67, in appRankAndSearchApp
+    eval(step)
+  File "<string>", line 1, in <module>
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 15, in open_app
+    raise e
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 12, in open_app
+    desired_caps = getDesiredcaps()
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Util\GetDesiredcaps.py", line 6, in getDesiredcaps
+    pc=ParseConfigFile(desiredcapsFilePath)
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Util\ParseConfigFile.py", line 7, in __init__
+    self.cf.read(path)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python37\lib\configparser.py", line 696, in read
+    self._read(fp, filename)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python37\lib\configparser.py", line 1014, in _read
+    for lineno, line in enumerate(fp, start=1):
+UnicodeDecodeError: 'gbk' codec can't decode byte 0x80 in position 240: illegal multibyte sequence
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\TestScripts\AppRankAndSearchApp.py", line 73, in appRankAndSearchApp
+    errPicPath = capture_screen()
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 83, in capture_screen
+    raise e
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 81, in capture_screen
+    driver.get_screenshot_as_file(picNameAndPath)
+AttributeError: 'str' object has no attribute 'get_screenshot_as_file'
+
+2019-04-19 13:30:57 AppRankAndSearchApp.py[line:23] INFO ----------进入APP主页
+2019-04-19 13:30:57 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-19 13:31:08 AppRankAndSearchApp.py[line:70] INFO 执行步骤“启动APP”成功
+2019-04-19 13:31:08 AppRankAndSearchApp.py[line:80] INFO 用例“进入APP主页”执行成功
+2019-04-19 13:31:08 AppRankAndSearchApp.py[line:23] INFO ----------登录
+2019-04-19 13:31:08 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-19 13:31:13 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击我的”成功
+2019-04-19 13:31:14 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击点击登录按钮”成功
+2019-04-19 13:31:20 AppRankAndSearchApp.py[line:70] INFO 执行步骤“输入用户名”成功
+2019-04-19 13:31:22 AppRankAndSearchApp.py[line:70] INFO 执行步骤“等待”成功
+2019-04-19 13:31:28 AppRankAndSearchApp.py[line:70] INFO 执行步骤“输入密码”成功
+2019-04-19 13:31:29 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击登录”成功
+2019-04-19 13:31:32 AppRankAndSearchApp.py[line:70] INFO 执行步骤“等待”成功
+2019-04-19 13:31:33 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击我的”成功
+2019-04-19 13:31:35 AppRankAndSearchApp.py[line:70] INFO 执行步骤“等待”成功
+2019-04-19 13:31:37 AppRankAndSearchApp.py[line:76] ERROR 执行步骤“断言是否登录成功”失败
+异常信息：Traceback (most recent call last):
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 59, in assert_string_in_pagesource
+    assert assertString in driver.page_source,"%s not found in page source!" %assertString
+AssertionError: 科普浩 not found in page source!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\TestScripts\AppRankAndSearchApp.py", line 67, in appRankAndSearchApp
+    eval(step)
+  File "<string>", line 1, in <module>
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 61, in assert_string_in_pagesource
+    raise AssertionError(e)
+AssertionError: 科普浩 not found in page source!
+
+2019-04-19 13:31:38 AppRankAndSearchApp.py[line:83] INFO 用例“登录”执行失败
+2019-04-19 13:31:38 AppRankAndSearchApp.py[line:23] INFO ----------搜索
+2019-04-19 13:31:38 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-19 13:31:38 AppRankAndSearchApp.py[line:70] INFO 执行步骤“回到首页”成功
+2019-04-19 13:31:41 AppRankAndSearchApp.py[line:70] INFO 执行步骤“等待3秒”成功
+2019-04-19 13:31:44 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击搜索框”成功
+2019-04-19 13:31:46 AppRankAndSearchApp.py[line:70] INFO 执行步骤“等待2秒”成功
+2019-04-19 13:31:52 AppRankAndSearchApp.py[line:70] INFO 执行步骤“输入搜索关键字”成功
+2019-04-19 13:31:52 AppRankAndSearchApp.py[line:70] INFO 执行步骤“搜索”成功
+2019-04-19 13:31:57 AppRankAndSearchApp.py[line:70] INFO 执行步骤“等待”成功
+2019-04-19 13:31:57 AppRankAndSearchApp.py[line:70] INFO 执行步骤“返回首页”成功
+2019-04-19 13:31:57 AppRankAndSearchApp.py[line:80] INFO 用例“搜索”执行成功
+2019-04-19 13:31:57 AppRankAndSearchApp.py[line:23] INFO ----------退出登录
+2019-04-19 13:31:57 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-19 13:31:58 AppRankAndSearchApp.py[line:70] INFO 执行步骤“进入我的页面”成功
+2019-04-19 13:32:02 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击设置按钮”成功
+2019-04-19 13:32:06 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击退出按钮”成功
+2019-04-19 13:32:09 AppRankAndSearchApp.py[line:70] INFO 执行步骤“确认退出”成功
+2019-04-19 13:32:09 AppRankAndSearchApp.py[line:80] INFO 用例“退出登录”执行成功
+2019-04-19 13:32:09 AppRankAndSearchApp.py[line:102] INFO 共4条用例，4条需要被执行，本次执行通过3条
+2019-04-19 13:45:54 AppRankAndSearchApp.py[line:23] INFO ----------进入APP主页
+2019-04-19 13:45:54 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-19 13:46:02 AppRankAndSearchApp.py[line:70] INFO 执行步骤“启动APP”成功
+2019-04-19 13:46:02 AppRankAndSearchApp.py[line:80] INFO 用例“进入APP主页”执行成功
+2019-04-19 13:46:02 AppRankAndSearchApp.py[line:23] INFO ----------登录
+2019-04-19 13:46:02 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-19 13:46:07 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击我的”成功
+2019-04-19 13:46:30 AppRankAndSearchApp.py[line:23] INFO ----------进入APP主页
+2019-04-19 13:46:30 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-19 13:46:38 AppRankAndSearchApp.py[line:70] INFO 执行步骤“启动APP”成功
+2019-04-19 13:46:39 AppRankAndSearchApp.py[line:80] INFO 用例“进入APP主页”执行成功
+2019-04-19 13:46:39 AppRankAndSearchApp.py[line:23] INFO ----------登录
+2019-04-19 13:46:39 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-19 13:46:43 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击我的”成功
+2019-04-19 13:46:45 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击点击登录按钮”成功
+2019-04-19 13:46:51 AppRankAndSearchApp.py[line:70] INFO 执行步骤“输入用户名”成功
+2019-04-19 13:46:53 AppRankAndSearchApp.py[line:70] INFO 执行步骤“等待”成功
+2019-04-19 13:46:59 AppRankAndSearchApp.py[line:70] INFO 执行步骤“输入密码”成功
+2019-04-19 13:47:00 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击登录”成功
+2019-04-19 13:47:03 AppRankAndSearchApp.py[line:70] INFO 执行步骤“等待”成功
+2019-04-19 13:47:04 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击我的”成功
+2019-04-19 13:47:06 AppRankAndSearchApp.py[line:70] INFO 执行步骤“等待”成功
+2019-04-19 13:47:08 AppRankAndSearchApp.py[line:76] ERROR 执行步骤“断言是否登录成功”失败
+异常信息：Traceback (most recent call last):
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 59, in assert_string_in_pagesource
+    assert assertString in driver.page_source,"%s not found in page source!" %assertString
+AssertionError: 科普浩 not found in page source!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\TestScripts\AppRankAndSearchApp.py", line 67, in appRankAndSearchApp
+    eval(step)
+  File "<string>", line 1, in <module>
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 61, in assert_string_in_pagesource
+    raise AssertionError(e)
+AssertionError: 科普浩 not found in page source!
+
+2019-04-19 13:47:09 AppRankAndSearchApp.py[line:83] INFO 用例“登录”执行失败
+2019-04-19 13:47:09 AppRankAndSearchApp.py[line:23] INFO ----------搜索
+2019-04-19 13:47:09 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-19 13:47:09 AppRankAndSearchApp.py[line:70] INFO 执行步骤“回到首页”成功
+2019-04-19 13:47:12 AppRankAndSearchApp.py[line:70] INFO 执行步骤“等待3秒”成功
+2019-04-19 13:47:13 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击搜索框”成功
+2019-04-19 13:47:15 AppRankAndSearchApp.py[line:70] INFO 执行步骤“等待2秒”成功
+2019-04-19 13:47:22 AppRankAndSearchApp.py[line:70] INFO 执行步骤“输入搜索关键字”成功
+2019-04-19 13:47:23 AppRankAndSearchApp.py[line:70] INFO 执行步骤“搜索”成功
+2019-04-19 13:47:27 AppRankAndSearchApp.py[line:70] INFO 执行步骤“等待”成功
+2019-04-19 13:47:28 AppRankAndSearchApp.py[line:70] INFO 执行步骤“返回首页”成功
+2019-04-19 13:47:28 AppRankAndSearchApp.py[line:80] INFO 用例“搜索”执行成功
+2019-04-19 13:47:28 AppRankAndSearchApp.py[line:23] INFO ----------社团
+2019-04-19 13:47:28 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-19 13:47:29 AppRankAndSearchApp.py[line:70] INFO 执行步骤“进入活动”成功
+2019-04-19 13:47:31 AppRankAndSearchApp.py[line:70] INFO 执行步骤“等待”成功
+2019-04-19 13:47:32 AppRankAndSearchApp.py[line:70] INFO 执行步骤“进入社团”成功
+2019-04-19 13:47:34 AppRankAndSearchApp.py[line:70] INFO 执行步骤“返回”成功
+2019-04-19 13:48:07 AppRankAndSearchApp.py[line:76] ERROR 执行步骤“None”失败
+异常信息：Traceback (most recent call last):
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\TestScripts\AppRankAndSearchApp.py", line 67, in appRankAndSearchApp
+    eval(step)
+  File "<string>", line 1, in <module>
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 53, in click
+    raise e
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Action\PageAction.py", line 51, in click
+    getElement(driver, locationType, locatorExpression).click()
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Util\ObjectMap.py", line 11, in getElement
+    raise e
+  File "D:\workspace\projects\DataAndKeywordDrivenFrameworkForApp\Util\ObjectMap.py", line 8, in getElement
+    lambda x: x.find_element(by=locationType, value = locatorExpression))
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+2019-04-19 13:48:07 AppRankAndSearchApp.py[line:83] INFO 用例“社团”执行失败
+2019-04-19 13:48:07 AppRankAndSearchApp.py[line:23] INFO ----------退出登录
+2019-04-19 13:48:07 AppRankAndSearchApp.py[line:32] INFO **********调用关键字驱动**********
+2019-04-19 13:48:07 AppRankAndSearchApp.py[line:70] INFO 执行步骤“进入我的页面”成功
+2019-04-19 13:48:11 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击设置按钮”成功
+2019-04-19 13:48:15 AppRankAndSearchApp.py[line:70] INFO 执行步骤“点击退出按钮”成功
+2019-04-19 13:48:18 AppRankAndSearchApp.py[line:70] INFO 执行步骤“确认退出”成功
+2019-04-19 13:48:18 AppRankAndSearchApp.py[line:80] INFO 用例“退出登录”执行成功
+2019-04-19 13:48:18 AppRankAndSearchApp.py[line:102] INFO 共5条用例，5条需要被执行，本次执行通过3条
